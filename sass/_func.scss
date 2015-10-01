@@ -1,12 +1,14 @@
 @charset "utf-8";
+
+//雪碧图图片
 @mixin spriteImg($map,$sprite){
 	background-image:$map;
-	background-position : sprite-background-position($map, $sprite);
-	width:image-width(sprite($map,$sprite));
-	heiht:image-heiht(sprite($map,$sprite));
+	background-position : sprite-position($map, $sprite);
+	width:image-width(sprite-file($map,$sprite));
+	height:image-height(sprite-file($map,$sprite));
 }
 
-
+//静态图片
 @mixin staticImg($img,$base64:false){
 	@if $base64{
 		background-image : inline-image($img);
@@ -15,4 +17,18 @@
 	}
 	width:image-width($img);
 	height:image-height($img);
+}
+
+//文字省略号
+@mixin textoverflow{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+//浏览器前缀
+@mixin css3($property, $value) {
+    @each $prefix in -webkit-, -moz-, -ms-, -o-, '' {
+        #{$prefix}#{$property}: $value;
+    }
 }

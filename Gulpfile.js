@@ -2,8 +2,9 @@ var gulp         = require("gulp");
 var concat       = require("gulp-concat");
 var browserSync  = require("browser-sync").create();
 var compass      = require("gulp-compass");
-var imagemin    = require("gulp-imagemin");
+var imagemin     = require("gulp-imagemin");
 var pngquant     = require("imagemin-pngquant");
+var jpegtran     = require("imagemin-jpegtran");
 var uglify       = require("gulp-uglify");
 var rename       = require("gulp-rename");
 
@@ -31,10 +32,10 @@ gulp.task("imagemin",function(){
 	            progressive: true,
 	            use: [pngquant()]
 	        }))
-	        .pipe("error",function(err){
+	        .on("error",function(err){
 	        	console.log("error");
 	        })
-		    .pipe("./images");
+		    .pipe(gulp.dest("./images"));
 	}
 
 	gulp.watch("./images/*.png",function(e){
@@ -54,6 +55,7 @@ gulp.task('compass',["server"], function() {
 		    sass: 'sass',
 		    image : "images",
 		    relative : true,
+		    style : "compressed",
 		    javascript : "js"　
 		  }))
 		  .on("error",function(err){
@@ -68,7 +70,7 @@ gulp.task('compass',["server"], function() {
 
 		.on("change",function(e){
 
-			buildcompass(e.path);
+			buildcompass("./sass/*.scss");
 
 		});
 
@@ -85,4 +87,4 @@ gulp.task('compass',["server"], function() {
 
 // });
 
-gulp.task('default',['server','compass','html']);
+gulp.task('default',['server','compass','html','imagemin']);

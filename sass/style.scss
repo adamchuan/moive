@@ -9,24 +9,313 @@ $icons : sprite-map("icons/*.png",$spacing: 4px);
 
 .wrapper{
 	position:relative;
+	min-width:1240px;
 	min-height:100%;
 	padding-bottom:193px;
+	@include css3(box-sizing,border-box);
+}
+/* 头部 */
+.header{
+	position:fixed;
+	top:0;left:0;width:100%;
+	z-index:500;
+	background-color:rgba(0,0,0,0.85);
+	.inner{
+		position:relative;
+		width:1240px;
+		margin:0 auto;
+		height:50px;
+	}
+	.logo{
+		float:left;
+		margin:7px 36px 0 0;
+		@include spriteImg($icons,"logo");
+	}
+	.nav_list{
+		float:left;
+		height: 50px;
+	}
+	.nav{
+		&:first-child{
+			margin-left:0;
+		}
+		position:relative;
+		float:left;
+		margin-left:16px;
+		position:relative;
+		width:42px;
+		height:50px;
+		text-align: center;
+
+		&:hover{
+			background-color:rgba(255,255,255,0.1);
+			&:after{
+				position:absolute;
+				top:38px;left:0;z-index:1;
+				width:100%;
+				height: 5px;
+				background-color:#fff;
+				content:"";
+			}
+			.child_nav{
+				display: block;
+				@include css3(animation,fadein 0.5s both);
+			}
+		}
+		.child_nav{
+			display: none;
+			position:absolute;
+			top:50px;
+			left:0;width:100%;
+			border-bottom-left-radius:5px;
+			border-bottom-right-radius:5px;
+			background-color:rgba(0,0,0,0.4);
+			a{
+				display: block;
+				margin-top:5px;
+				font-size:14px;
+				color:#fff;
+				&:last-child{
+					margin-bottom:5px;	
+				}
+			}
+		}
+	}
+	.search_wrapper{
+		position:relative;
+		float:left;
+		margin:12px 0 0 25px;
+		width:222px;
+		height: 25px;
+		border-radius:5px;
+		background-color:#fff;
+		.search_input{
+			margin:5px 13px;
+			height:15px;
+			line-height: 15px;
+			font-size:12px;
+			color:#9c9c9c;
+			-webkit-appearance: none;
+			border: 0px;
+			outline: none;
+		}
+		.search_btn{
+			position:absolute;
+			top:0;right:0;
+			bottom:0;
+			width:33px;
+			border-left:1px solid #d9d9d9;
+			cursor: pointer;
+			&:before{
+				display: block;
+				margin:5px auto;
+				@include spriteImg($icons,search);
+				content:" ";
+			}
+		}
+	}
+	.update_notice{
+		position:relative;
+		float:left;
+		margin-left:46px;
+		height: 50px;
+		&:after{
+			display: inline-block;
+			vertical-align: middle;
+			height:100%;
+			content:"";
+		}
+		.update_msg{
+			display: inline-block;
+			margin-left:5px;
+			vertical-align: middle;
+			color:#fff;
+			width:160px;
+			cursor: pointer;
+			@include textoverflow();
+		}
+		.word_jrgx{
+			display: inline-block;
+			vertical-align: middle;
+			@include spriteImg($icons,jrgx);
+		}
+		&:hover{
+			.update_msg{
+				text-decoration: underline;
+			}
+			.more_notice{
+				display: block;
+				@include css3(animation,fadein 0.5s both);
+			}
+		}
+		.more_notice{
+			display: none;
+			position:absolute;
+			width:160px;
+			top:50px;
+			right:0;
+			display: none;
+			border-bottom-left-radius:5px;
+			border-bottom-right-radius:5px;
+			padding:0 5px;
+			background-color:rgba(0,0,0,0.5);
+			a{
+				display: block;
+				margin-top:5px;
+				font-size:14px;
+				color:#fff;
+				@include textoverflow();
+				&:last-child{
+					margin-bottom:5px;	
+				}
+				&:hover{
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+	.sns_wrapper{
+		position:absolute;
+		z-index: 2;
+		right:0;
+		top:0;
+		bottom:0;
+		&:after{
+			display: inline-block;
+			vertical-align: middle;
+			height:100%;
+			content:"";
+		}
+		.item{
+			display: inline-block;
+			vertical-align: middle;
+			cursor: pointer;
+		}
+		.logo_weibo{
+			@include spriteImg($icons,weibo);
+		}
+	}
+	.icon_w{
+		display: inline-block;
+		margin-top:15px;
+		@include spriteImg($icons,"nav_zx");
+		text-indent: -9999em;
+		font-size:0;
+		&.nav_zx{
+			background-position : sprite-position($icons, "nav_zx");
+		}
+		&.nav_zixun{
+			background-position : sprite-position($icons,"nav_zixun");
+		}
+		&.nav_zj{
+			background-position : sprite-position($icons, "nav_zj");
+		}
+		&.nav_dy{
+			background-position : sprite-position($icons,"nav_dy");
+		}
+		&.nav_ftp{
+			background-position : sprite-position($icons,"nav_ftp");
+		}
+		&.nav_jj{
+			background-position : sprite-position($icons,"nav_jj");
+		}
+		&.nav_qp{
+			background-position : sprite-position($icons,"nav_qp");
+		}
+	}
 }
 
+.indexbanner{
+	width:100%;
+	height:550px;
+	overflow:hidden;
+	.bannerimg{
+		width:100%;
+		height: auto;
+	}
+}
+
+
+/* 底部 */
 .footer{
 	position: absolute;
 	bottom:0;left:0;width:100%;
 	padding:20px 0;
 	z-index:1;
 	background-color:#585757;
+	text-align:center;
+	color:#fff;
+	.foot_nav_wrapper{
+		display: inline-block;
+		vertical-align: middle;
+		text-align:left;
+		li{
+			margin-top:25px;
+			&:first-child{
+				margin-top:0;
+			}
+		}
+		h3{
+			font-weight: normal;
+			font-size:18px;
+			color:#fff;
+		}
+		.item{
+			color:#fff;
+			font-size:14px;
+			margin-right:10px;
+			@include css3(transition,color 0.5s);
+			&:hover{
+				color:darken(#fff,5%);
+			}
+		}
+	}
+	.copyright{
+		margin-left:70px;
+		display: inline-block;
+		vertical-align: middle;
+		text-align: center;
+		color:#fff;
+	}
 	&:after{
 		display: inline-block;
 		content:"";
 		vertical-align: middle;
 		height: 100%;
 	}
+	.icon_ftp{
+		position:relative;
+		display: inline-block;
+		margin-right:3px;
+		vertical-align: middle;
+		@include spriteImg($icons,"ftp");
+	}
+	.icon_nav{
+		position:relative;
+		display: inline-block;
+		margin-right:3px;
+		vertical-align: middle;
+		@include spriteImg($icons,"nav");
+	}
 }
 .logo_ghy{
 	display: inline-block;
 	@include spriteImg($icons,logo_ghy);
+}
+
+@keyframes fadein{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+@-webkit-keyframes fadein{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
 }
