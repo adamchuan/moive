@@ -1,0 +1,18 @@
+@charset "utf-8";
+@mixin spriteImg($map,$sprite){
+	background-image:$map;
+	background-position : sprite-background-position($map, $sprite);
+	width:image-width(sprite($map,$sprite));
+	heiht:image-heiht(sprite($map,$sprite));
+}
+
+
+@mixin staticImg($img,$base64:false){
+	@if $base64{
+		background-image : inline-image($img);
+	}@else{
+		background-image : image-url($img);
+	}
+	width:image-width($img);
+	height:image-height($img);
+}

@@ -1,0 +1,32 @@
+@charset "utf-8";
+@import "_func";
+@import "_reset";
+
+$icons : sprite-map("icons/*.png",$spacing: 4px);
+%createimg{
+	background-image:$icons;
+}
+
+.wrapper{
+	position:relative;
+	min-height:100%;
+	padding-bottom:193px;
+}
+
+.footer{
+	position: absolute;
+	bottom:0;left:0;width:100%;
+	padding:20px 0;
+	z-index:1;
+	background-color:#585757;
+	&:after{
+		display: inline-block;
+		content:"";
+		vertical-align: middle;
+		height: 100%;
+	}
+}
+.logo_ghy{
+	display: inline-block;
+	@include spriteImg($icons,logo_ghy);
+}
