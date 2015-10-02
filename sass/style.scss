@@ -199,8 +199,7 @@ $icons : sprite-map("icons/*.png",$spacing: 4px);
 		display: inline-block;
 		margin-top:15px;
 		@include spriteImg($icons,"nav_zx");
-		text-indent: -9999em;
-		font-size:0;
+		color:transparent;
 		&.nav_zx{
 			background-position : sprite-position($icons, "nav_zx");
 		}
@@ -236,6 +235,169 @@ $icons : sprite-map("icons/*.png",$spacing: 4px);
 }
 
 
+.area_row{
+	position:relative;
+	width:1240px;
+	margin:0 auto;
+	overflow:hidden;
+	.area_header{
+		position:relative;
+		overflow:hidden;
+		.header_btn_wrapper{
+			position:absolute;
+			right:0;
+			top:5px;
+		}
+		.btn_asj{
+			display: inline-block;
+			vertical-align: middle;
+			@include spriteImg($icons,btn_asj1);
+			cursor: pointer;
+			&.on{
+				background-position : sprite-position($icons, btn_asj2);
+			}
+		}
+		.icon_line{
+			display: inline-block;
+			vertical-align: middle;
+			@include spriteImg($icons,icon_line);
+
+		}
+		.btn_adj{
+			display: inline-block;
+			vertical-align: middle;
+			@include spriteImg($icons,btn_adj1);
+			cursor: pointer;
+			&.on{
+				background-position : sprite-position($icons, btn_adj2);
+			}
+		}
+	}
+	.area_title{
+		color:transparent;
+		.word{
+			display: block;
+			&.dy{//电影
+				@include spriteImg($icons,title_dy);
+			}
+			&.zx{//在线观看
+				@include spriteImg($icons,title_zx);
+			}
+			&.zj{//专辑
+				@include spriteImg($icons,title_zj);
+			}
+			&.dsj{//电视剧
+				@include spriteImg($icons,title_dsj);
+			}	
+		}
+		&:after{
+			display: block;
+			margin-top:7px;
+			height:3px;
+			background-color:#cbcaca;
+			width:250px;
+			z-index: 1;
+			content:" ";
+		}
+	}
+}
+
+.list_area{
+	width:870px;
+	margin:25px 0 0;
+	@include css3(box-sizing,border-box);	
+	.index_tiny_img{
+		width:150px;
+		height: 225px;
+	}
+	.list_wrapper{
+		overflow: hidden;
+		.item{
+			float:left;
+			width:150px;
+			margin:10px 30px 0 0;
+			&:nth-child(5n){
+				margin-right:0;
+			}
+		}
+		.name{
+			margin-top:5px;
+			height:20px;
+			line-height: 20px;
+			color:#464646;
+			text-align: center;
+			font-size:20px;
+			@include textoverflow();
+		}
+	}
+}
+.single_area{
+	margin:25px 0 0 0;
+	width:320px;
+}
+.single_wrapper{
+	margin-top:10px;
+	.select_wrapper{
+		margin-top:5px;
+		height: 20px;
+		text-align: right;
+	}
+	.index_single_img{
+		width:320px;
+		height: 485px;
+	}
+	.index_mulit_img{
+		width:320px;
+		height: 225px;
+	}
+	.options{
+		display: inline-block;
+		width:17px;
+		height: 17px;
+		background-color:#a4a4a4;
+		@include css3(border-radius,17px);
+		&.on{
+			background-color:#00a0e9;
+		}
+		cursor: pointer;
+	}
+	.item{
+		display: block;
+		position:relative;
+		margin-top:35px;
+		&:first-child{
+			margin-top:0;
+		}
+		.msg_wrapper{
+			position:absolute;
+			bottom:0;
+			padding:20px;
+			left:0;width:100%;
+			background-color:rgba(213,213,213,.81);
+			color:#000;
+			font-size:20px;
+			@include css3(box-sizing,border-box);
+			em{
+				font-size:25px;
+				color:#000;
+			}
+		}
+	}
+}
+
+/* 海报 */
+.index_ad_img{
+	display:block;
+	margin:10px auto 0 ;
+	width:1240px;
+	height:100px;
+}
+.pr{
+	position:absolute;
+	top:0;bottom:0;
+	right:0px;
+	
+}
 /* 底部 */
 .footer{
 	position: absolute;
