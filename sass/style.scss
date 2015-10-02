@@ -12,14 +12,14 @@ $icons : sprite-map("icons/*.png",$spacing: 4px);
 	min-width:1240px;
 	min-height:100%;
 	padding-bottom:193px;
-	@include css3(box-sizing,border-box);
+	box-sizing:border-box;
 }
 /* 头部 */
 .header{
 	position:fixed;
 	top:0;left:0;width:100%;
 	z-index:500;
-	background-color:rgba(0,0,0,0.85);
+	@include rgba-background(rgba(0,0,0,0.85));
 	.inner{
 		position:relative;
 		width:1240px;
@@ -48,7 +48,7 @@ $icons : sprite-map("icons/*.png",$spacing: 4px);
 		text-align: center;
 
 		&:hover{
-			background-color:rgba(255,255,255,0.1);
+			@include rgba-background(rgba(255,255,255,0.1));
 			&:after{
 				position:absolute;
 				top:38px;left:0;z-index:1;
@@ -59,7 +59,7 @@ $icons : sprite-map("icons/*.png",$spacing: 4px);
 			}
 			.child_nav{
 				display: block;
-				@include css3(animation,fadein 0.5s both);
+				animation:fadein 0.5s both;
 			}
 		}
 		.child_nav{
@@ -69,7 +69,7 @@ $icons : sprite-map("icons/*.png",$spacing: 4px);
 			left:0;width:100%;
 			border-bottom-left-radius:5px;
 			border-bottom-right-radius:5px;
-			background-color:rgba(0,0,0,0.4);
+			@include rgba-background(rgba(0,0,0,0.4));
 			a{
 				display: block;
 				margin-top:5px;
@@ -145,7 +145,7 @@ $icons : sprite-map("icons/*.png",$spacing: 4px);
 			}
 			.more_notice{
 				display: block;
-				@include css3(animation,fadein 0.5s both);
+				animation:fadein 0.5s both;
 			}
 		}
 		.more_notice{
@@ -158,7 +158,7 @@ $icons : sprite-map("icons/*.png",$spacing: 4px);
 			border-bottom-left-radius:5px;
 			border-bottom-right-radius:5px;
 			padding:0 5px;
-			background-color:rgba(0,0,0,0.5);
+			@include rgba-background(rgba(0,0,0,0.5));
 			a{
 				display: block;
 				margin-top:5px;
@@ -305,20 +305,18 @@ $icons : sprite-map("icons/*.png",$spacing: 4px);
 .list_area{
 	width:870px;
 	margin:25px 0 0;
-	@include css3(box-sizing,border-box);	
+	box-sizing:border-box;	
 	.index_tiny_img{
 		width:150px;
 		height: 225px;
 	}
 	.list_wrapper{
 		overflow: hidden;
+		margin-left:-30px;
 		.item{
 			float:left;
 			width:150px;
-			margin:10px 30px 0 0;
-			&:nth-child(5n){
-				margin-right:0;
-			}
+			margin:10px 0 0 30px;
 		}
 		.name{
 			margin-top:5px;
@@ -355,7 +353,7 @@ $icons : sprite-map("icons/*.png",$spacing: 4px);
 		width:17px;
 		height: 17px;
 		background-color:#a4a4a4;
-		@include css3(border-radius,17px);
+		border-radius:17px;
 		&.on{
 			background-color:#00a0e9;
 		}
@@ -373,10 +371,10 @@ $icons : sprite-map("icons/*.png",$spacing: 4px);
 			bottom:0;
 			padding:20px;
 			left:0;width:100%;
-			background-color:rgba(213,213,213,.81);
+			@include rgba-background(rgba(213,213,213,0.81));
 			color:#000;
 			font-size:20px;
-			@include css3(box-sizing,border-box);
+			box-sizing:border-box;
 			em{
 				font-size:25px;
 				color:#000;
@@ -426,7 +424,7 @@ $icons : sprite-map("icons/*.png",$spacing: 4px);
 			color:#fff;
 			font-size:14px;
 			margin-right:10px;
-			@include css3(transition,color 0.5s);
+			transition:color 0.5s;
 			&:hover{
 				color:darken(#fff,5%);
 			}

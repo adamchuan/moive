@@ -7,7 +7,7 @@ var pngquant     = require("imagemin-pngquant");
 var jpegtran     = require("imagemin-jpegtran");
 var uglify       = require("gulp-uglify");
 var rename       = require("gulp-rename");
-
+var autoprefixer = require("gulp-autoprefixer");
 gulp.task("server",function(){
 
 	browserSync.init({
@@ -61,6 +61,10 @@ gulp.task('compass',["server"], function() {
 		  .on("error",function(err){
 		  	console.log(err);
 		  })
+		  .pipe(autoprefixer({
+		      browsers: ['ie 8-10','Firefox >= 20','Chrome >= 30','iOS >= 6','Android >= 4'],
+		      cascade: false
+		  }))
 		  .pipe(browserSync.stream())
 		  .pipe(gulp.dest('./css'));
 

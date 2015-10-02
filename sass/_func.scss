@@ -1,4 +1,6 @@
 @charset "utf-8";
+@import "compass/css3/images";
+
 
 //雪碧图图片
 @mixin spriteImg($map,$sprite){
@@ -31,4 +33,12 @@
     @each $prefix in -webkit-, -moz-, -ms-, -o-, '' {
         #{$prefix}#{$property}: $value;
     }
+}
+
+@mixin rgba-background($color){
+    @include filter-gradient($color, $color);
+    background: transparent;
+    // set filter as none for IE9+, because IE9+ supprot RGBa
+    :root & {filter: none\0/IE9;}
+    background: $color;
 }
