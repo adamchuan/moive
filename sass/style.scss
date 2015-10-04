@@ -490,9 +490,203 @@ $icons : sprite-map("icons/*.png",$spacing: 4px);
 =================================================================================*/
 
 .index3_wrapper{
-		position:relative;
+	position:relative;
 	min-width:1240px;
 	min-height:100%;
-	padding-bottom:193px;
+	padding-bottom:110px;
 	box-sizing:border-box;
+
+.index3_header{
+	position:fixed;
+	top:0;left:0;width:100%;
+	z-index:500;
+	@include rgba-background(rgba(88,88,88,0.9));
+
+	.index3_inner{
+		position:relative;
+		width:1240px;
+		margin:0 auto;
+		height:50px;
+	}
+	.index3_logo{
+		float:left;
+		margin:7px 36px 0 0;
+		background-image: url('../images/icons-s65f4c88903.png');
+	    background-position: 0 -169px;
+	    width: 150px;
+	    height: 36px;
+	}
+	.index3_nav_list{
+		float:left;
+		height: 50px;
+	}
+		.index3_nav{
+			&:first-child{
+					margin-left:0;
+				} /*伪类，针对子类的第一个元素*/
+			position:relative;
+			float:left;
+			margin-left:16px;
+			position:relative;
+			width:42px;
+			height:50px;
+			text-align: center;
+
+			&:hover{
+				@include rgba-background(rgba(255,255,255,0.1));
+				&:after{
+					position:absolute;
+					top:38px;left:0;z-index:1;
+					width:100%;
+					height: 5px;
+					background-color:#fff;
+					content:"";
+				}
+				.index3_child_nav{
+					display: block;
+					animation:fadein 0.5s both;
+					-webkit-animation:fadein 0.5s both;
+				}
+			}
+			.index3_child_nav{
+				display: none;
+				position:absolute;
+				top:50px;
+				left:0;width:100%;
+				border-bottom-left-radius:5px;
+				border-bottom-right-radius:5px;
+				@include rgba-background(rgba(0,0,0,0.4));
+				a{
+					display: block;
+					margin-top:5px;
+					font-size:14px;
+					color:#fff;
+					&:last-child{
+						margin-bottom:5px;	
+					}
+				}
+			}	
+		}
+		.index3_search_wrapper{
+			position:relative;
+			float:left;
+			margin:12px 0 0 274px;
+			width:222px;
+			height: 25px;
+			border-radius:5px;
+			background-color:#fff;
+			.index3_search_input{
+				margin:5px 13px;
+				height:15px;
+				line-height: 15px;
+				font-size:12px;
+				color:#9c9c9c;
+				-webkit-appearance: none;
+				border: 0px;
+				outline: none;
+			}
+			.index3_search_btn{
+				position:absolute;
+				top:0;right:0;
+				bottom:0;
+				width:33px;
+				border-left:1px solid #d9d9d9;
+				cursor: pointer;
+				&:before{
+					display: block;
+					margin:5px auto;
+					/*@include spriteImg($icons,search);*/
+					background-image: url('../images/icons-s65f4c88903.png');
+					background-position: 0 -463px;
+					width: 17px;
+					height: 15px;
+					content:" ";
+				}
+			}
+			
+		}
+		.index3_sns_wrapper{
+				position:absolute;
+				z-index: 2;
+				right:0;
+				top:0;
+				bottom:0;
+				&:after{
+					display: inline-block;
+					vertical-align: middle;
+					height:100%;
+					content:"";
+				}
+				.item{
+					display: inline-block;
+					vertical-align: middle;
+					cursor: pointer;
+				}
+				.logo_weibo{
+					background-image: url('../images/icons-s65f4c88903.png');
+				    background-position: 0 -630px;
+				    width: 34px;
+				    height: 26px;
+				}
+		}
+		.icon_w{
+			display: inline-block;
+			margin-top:15px;
+			/*@include spriteImg($icons,"nav_zx");*/
+			background-image: url('../images/icons-s65f4c88903.png');
+			background-position: 0 -439px;
+			width: 36px;
+			height: 20px;
+
+			color:transparent;
+			&.nav_zx{
+				background-position : sprite-position($icons, "nav_zx");
+			}
+			&.nav_zixun{
+				background-position : sprite-position($icons,"nav_zixun");
+			}
+			&.nav_zj{
+				background-position : sprite-position($icons, "nav_zj");
+			}
+			&.nav_dy{
+				background-position : sprite-position($icons,"nav_dy");
+			}
+			&.nav_ftp{
+				background-position : sprite-position($icons,"nav_ftp");
+			}
+			&.nav_jj{
+				background-position : sprite-position($icons,"nav_jj");
+			}
+			&.nav_qp{
+				background-position : sprite-position($icons,"nav_qp");
+			}
+		}	
+	}
+	
+	.index3_footer{
+		position:absolute;
+		bottom:0;left:0;width:100%;
+		z-index:1;
+		background-color:#585757;
+		text-align:center;
+		color:#fff;
+
+		.index3_inner{
+			position:relative;
+			width:1240px;
+			margin:0 auto;
+			height:38px;
+
+			.copyright{
+				height: 38px;
+				margin-left:70px;
+				display: inline-block;
+				vertical-align: middle;
+				text-align: center;
+				color:#fff;
+				line-height: 38px;				
+			}
+		}
+
+	}
 }
