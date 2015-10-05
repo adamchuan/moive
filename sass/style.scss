@@ -2,6 +2,7 @@
 @import "_func";
 @import "_reset";
 
+body{background-color:#F1F1F1;}
 $icons : sprite-map("icons/*.png",$spacing: 4px);
 %createimg{
 	background-image:$icons;
@@ -11,9 +12,11 @@ $icons : sprite-map("icons/*.png",$spacing: 4px);
 	position:relative;
 	min-width:1240px;
 	min-height:100%;
-	padding-bottom:193px;
 	box-sizing:border-box;
+	&.pb_193{padding-bottom:193px;}
+	&.pb_50{padding-bottom:50px;}
 }
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
 /* 头部 */
 .header{
 	position:fixed;
@@ -46,6 +49,16 @@ $icons : sprite-map("icons/*.png",$spacing: 4px);
 		width:42px;
 		height:50px;
 		text-align: center;
+		&.on{
+			&:after{
+				position:absolute;
+				top:38px;left:0;z-index:1;
+				width:100%;
+				height: 5px;
+				background-color:#fff;
+				content:"";
+			}
+		}
 
 		&:hover{
 			@include rgba-background(rgba(255,255,255,0.1));
@@ -84,11 +97,12 @@ $icons : sprite-map("icons/*.png",$spacing: 4px);
 	.search_wrapper{
 		position:relative;
 		float:left;
-		margin:12px 0 0 25px;
+		margin:12px 0 0 365px;
 		width:222px;
 		height: 25px;
 		border-radius:5px;
 		background-color:#fff;
+		&.search_index{margin-left:25px;}
 		.search_input{
 			margin:5px 13px;
 			height:15px;
@@ -233,7 +247,6 @@ $icons : sprite-map("icons/*.png",$spacing: 4px);
 		height: auto;
 	}
 }
-
 
 .area_row{
 	position:relative;
@@ -396,6 +409,315 @@ $icons : sprite-map("icons/*.png",$spacing: 4px);
 	right:0px;
 	
 }
+
+/*二级正文*/
+main{
+	margin:74px auto;
+	width:1240px;
+}
+
+.left_list{
+	width:150px;
+	float:left;
+}
+
+.l_list{	
+	.title_todaynews{@include spriteImg($icons,title_todaynews);}
+	.title_type{@include spriteImg($icons,title_type);}
+	.title_area{@include spriteImg($icons,title_area);}
+	.title_top10{@include spriteImg($icons,title_top10);}
+	.title_quarter10{@include spriteImg($icons,title_quarter10);}
+	.title_sort{@include spriteImg($icons,title_sort);}
+	ul{
+		border-top:1px solid #D8D8D8;
+		line-height:26px;
+		padding-top:5px;
+		padding-bottom:15px;
+		li{
+			&:hover{background-color:#EAEAEA;}
+		}
+	}
+}
+
+.tvbanner{
+	float:right;
+	width:85%;
+	height:240px;
+	overflow:hidden;
+	position:relative;
+	margin-bottom:25px;
+	.bannerimg{
+		width:100%;
+		height: auto;
+	}
+	ul{
+		position:absolute;
+		li{
+			float:left;
+			overflow:hidden;
+			cursor:pointer;
+		}
+	}
+}
+.banner_imgs{
+	z-index:1;
+	li{
+		display:none;
+		&.current{display:block;}
+	}
+}
+.tab{
+	right:6px;
+	bottom:10px;
+	z-index:2;
+	li{
+		background-color:#919598;
+		width:15px;
+		height:15px;
+		margin-left:8px;
+		border-radius:10px;
+		&.current{background-color:#00A0ED;}
+	}
+}
+.right_list{
+	float:right;
+	width:85%;
+	.area_title{
+		color:transparent;
+		.word{
+			display: block;
+			&.dy{//电影
+				@include spriteImg($icons,title_dy);
+			}
+			&.zx{//在线观看
+				@include spriteImg($icons,title_zx);
+			}
+			&.zj{//专辑
+				@include spriteImg($icons,title_zj);
+			}
+			&.dsj{//电视剧
+				@include spriteImg($icons,title_dsj);
+			}
+			&.zixun{//资讯
+				@include spriteImg($icons,title_zixun);
+			}	
+		}
+		&:after{
+			display: block;
+			margin-top:7px;
+			height:3px;
+			background-color:#CDCDCD;
+			width:250px;
+			z-index: 1;
+			content:" ";
+		}
+	}
+	.list_wrapper{
+		overflow: hidden;
+		margin-left:-30px;
+		.item{
+			width:315px;
+			height:145px;
+			float:left;
+			border:1px solid #CDCDCD;
+			background-color:#fff;
+			margin:10px 0 20px 30px;
+			padding:6px 7px;
+		}
+	}
+}
+.list_pic {
+	width: 100px;
+	height: 150px;
+	float: left;
+	margin-right: 10px;
+	overflow: hidden;
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+.item_message {
+	width: 205px;
+	height: 140px;
+	float: left;
+	position: relative;
+
+	.name {
+		color: #00A0E9;
+		font-size: 20px;
+	}
+	.likes {
+		position: relative;
+		top: -65px;
+		right: 20px;
+		float: right;
+		@include spriteImg($icons, likes);
+
+		.num {
+			position: absolute;
+			bottom: -3px;
+			right: 0;
+			color: #00A0E9;
+			font-size: 16px;
+		}
+	}
+	.intro {
+		float: left;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		line-height: 15px;
+	}
+}
+.list_foot {
+	height: 40px;
+	margin-top: 20px;
+	ul {
+		float: right;
+		margin-right: -20px;
+		li {
+			float: left;
+			margin-right: 20px;
+			.number {
+				width: 30px;
+			}
+		}
+	}
+}
+/*在线观看*/
+.list_wrapper_online {
+	overflow: hidden;
+	margin-left: -30px;
+	.item {
+		float:left;
+		width: 235px;
+		height: 235px;
+		border: 1px solid #CDCDCD;
+		background-color: #fff;
+		margin: 20px 0 20px 30px;
+	}
+	.list_pic {
+		width: 235px;
+		height: 160px;
+	}
+	.item_message {
+		width: 235px;
+		height: 70px;
+		margin:0 8px;
+		.likes {
+			position: relative;
+			top: -45px;
+			right: 20px;
+			float: right;
+			@include spriteImg($icons, likes);
+		}
+	}
+}
+
+/*专辑*/
+.list_wrapper_collection{
+	overflow: hidden;
+	margin-left: -30px;
+	.item{
+		width:240px;
+		height:330px;
+		position:relative;
+		display:block;
+		margin: 30px 0 20px 30px;
+		float:left;
+		&:hover{
+			.msg_wrapper{display:block;}
+		}
+		.clc_img{
+			width:100%;
+			height:100%;
+		}
+		.msg_wrapper{
+			display:none;
+			position:absolute;
+			bottom:0;
+			padding:20px;
+			left:0;width:100%;
+			@include rgba-background(rgba(213,213,213,0.81));
+			color:#000;
+			font-size:15px;
+			box-sizing:border-box;
+			em{
+				font-size:20px;
+				color:#000;
+			}
+		}
+	}
+}
+
+/*资讯*/
+.list_wrapper_news{
+	overflow:hidden;
+	.item{
+		margin:30px 0 20px 0;
+		padding-bottom:30px;
+		width:100%;
+		height:200px;
+		border-bottom: 1px solid #CDCDCD;
+		.list_pic{
+			width:300px;
+			height:200px;
+			img{
+				width:100%;
+				height:auto;
+			}
+		}
+		.item_message{
+			margin:0 0 0 30px;
+			width:700px;
+			height:200px;
+			p{
+				float:left;
+				color:#B4B4B4;
+			}
+			.intro{
+				color:black;
+				line-height:18px;
+			}
+		}
+	}
+}
+
+/*搜索页面*/
+.sc{
+	width:80%;
+	
+	.big{
+		font-size:30px;
+		color:#00A0E9;
+		float:left;
+	}
+	h1{
+		margin:20px 10px 20px 0;
+		float:left;
+		font-size:16px;
+	}
+	.blue{
+		color:#00A0E9;
+	}
+	.list_foot{}
+}
+.list_wrapper_search{
+	width:100%;
+	overflow:hidden;
+	margin:0 0 80px 0;
+	.item{
+		float:left;
+		width:100%;
+		margin: 20px 0 0 0;
+		.item_message{
+			width:86%;
+			margin: 0 0 0 20px;
+		}
+	}
+}
 /* 底部 */
 .footer{
 	position: absolute;
@@ -457,6 +779,14 @@ $icons : sprite-map("icons/*.png",$spacing: 4px);
 		vertical-align: middle;
 		@include spriteImg($icons,"nav");
 	}
+}
+footer{
+	position: absolute;
+	bottom:0;left:0;width:100%;
+	padding:10px 0;
+	z-index:1;
+	background-color:#CFCFCF;
+	text-align:center;
 }
 .logo_ghy{
 	display: inline-block;
