@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+/*改动电影网的孩子，使用字体库前请看以下说明
+电影网的三级页面中，字体一共分3类：主标题字体---32px、副标题小标题按钮字体（以下简称为
+副字体）---18px、正文评论字体---16px。在不考虑颜色的情况下，各类型字体具有自己的特
+点。请慎重使用以及改动。
+                                                   -----2014级开发部，宁折不弯的小野人*/
+
+
+
+@mixin font-main-title{
+	font-family:"Microsoft YaHei";
+	font-size:32px;
+	color:#00a0e9;
+}
+
+@mixin font-sub($color:#676767){
+	font-family:"Microsoft YaHei";
+	font-size:18px;
+	color:$color;
+}
+
