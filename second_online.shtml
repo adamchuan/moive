@@ -8,75 +8,7 @@
 <body class="">
 	<div class="wrapper pb_50 nav_4" id="wrapper">
 		
-		<header class="header">
-			<div class="inner">
-				<icon class="logo"></icon>
-				<div class="nav_list">
-					<div class="nav">
-						<a href="" class="icon_w nav_zj"></a>
-						<div class="child_nav">
-
-						</div>
-					</div>
-					<div class="nav">
-						<a href="" class="icon_w nav_dy"></a>
-						<div class="child_nav">
-							<a href="">剧情</a>	
-							<a href="">动作</a>
-							<a href="">科幻</a>
-							<a href="">恐怖</a>
-							<a href="">喜剧</a>
-							<a href="">动画</a>
-							<a href="">战争</a>
-							<a href="">其他</a>
-						</div>
-					</div>
-					<div class="nav">
-						<a class="icon_w nav_jj"></a>
-						<div class="child_nav">
-							<a href="">欧美</a>	
-							<a href="">大陆</a>	
-							<a href="">日韩</a>
-							<a href="">港台</a>
-							<a href="">其他</a>
-						</div>
-					</div>
-					<div class="nav">
-						<a class="icon_w nav_zx"></a>
-						<div class="child_nav">
-								
-						</div>
-					</div>
-					<div class="nav">
-						<a class="icon_w nav_zixun"></a>
-						<div class="child_nav">
-								
-						</div>
-					</div>
-					<div class="nav">
-						<a class="icon_w nav_qp"></a>
-						<div class="child_nav">
-								
-						</div>
-					</div>
-					<div class="nav">
-						<a class="icon_w nav_ftp"></a>
-						<div class="child_nav">
-								
-						</div>
-					</div>
-				</div>
-
-				<div class="search_wrapper">
-					<input class="search_input" type="text" placeholder="请输入影片名称或关键词">
-					<span class="search_btn"></span>
-				</div>
-
-				<div class="sns_wrapper">
-					<a class="item logo_weibo"></a>
-				</div>
-			</div>
-		</header>
+		<!--#include file="/head.htm" -->
 
 		<main class="clearfix">
 			<div class="left_list">
@@ -219,12 +151,7 @@
 			</div>
 		</main>
 
-		<footer class="">
-			<p class="copyright_word">
-					光华园网站 版权所有 Copyright GHY.CN &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					所有电影资源均来自于网络，请勿用于商业用途
-			</p>
-		</footer>
+		<!--#include file="/foot.htm" -->
 	</div>
 	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
