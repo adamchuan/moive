@@ -6,7 +6,6 @@ $icons : sprite-map("icons/*.png",$spacing: 4px);
 %createimg{
 	background-image:$icons;
 }
-
 .wrapper{
 	position:relative;
 	min-width:1240px;
@@ -511,10 +510,11 @@ $icons : sprite-map("icons/*.png",$spacing: 4px);
 	.index3_logo{
 		float:left;
 		margin:7px 36px 0 0;
-		background-image: url('../images/icons-s65f4c88903.png');
+		@include spriteImg($icons,"logo");
+		/*background-image: url('../images/icons-s65f4c88903.png');
 	    background-position: 0 -169px;
 	    width: 150px;
-	    height: 36px;
+	    height: 36px;*/
 	}
 	.index3_nav_list{
 		float:left;
@@ -595,11 +595,7 @@ $icons : sprite-map("icons/*.png",$spacing: 4px);
 				&:before{
 					display: block;
 					margin:5px auto;
-					/*@include spriteImg($icons,search);*/
-					background-image: url('../images/icons-s65f4c88903.png');
-					background-position: 0 -463px;
-					width: 17px;
-					height: 15px;
+					@include spriteImg($icons,search);
 					content:" ";
 				}
 			}
@@ -623,20 +619,18 @@ $icons : sprite-map("icons/*.png",$spacing: 4px);
 					cursor: pointer;
 				}
 				.logo_weibo{
-					background-image: url('../images/icons-s65f4c88903.png');
-				    background-position: 0 -630px;
-				    width: 34px;
-				    height: 26px;
+					@include spriteImg($icons,weibo);
 				}
 		}
 		.icon_w{
 			display: inline-block;
 			margin-top:15px;
-			/*@include spriteImg($icons,"nav_zx");*/
+			@include spriteImg($icons,"nav_zx");
+			/*@include spriteImg($icons,"nav_zx");
 			background-image: url('../images/icons-s65f4c88903.png');
 			background-position: 0 -439px;
 			width: 36px;
-			height: 20px;
+			height: 20px;*/
 
 			color:transparent;
 			&.nav_zx{
@@ -662,13 +656,9 @@ $icons : sprite-map("icons/*.png",$spacing: 4px);
 			}
 		}	
 	}
-	/*======================================================================
-	=========================================================================
-	========================================================================
+	/*=======================================================================
 	=============================中部main内容   ============================================
-	==========================================================================
-	===========================================================
-	===================================================================================*/
+	==================================================================================*/
 	.index3_main{
 		width: 100%;
 		position: relative;
@@ -708,6 +698,52 @@ $icons : sprite-map("icons/*.png",$spacing: 4px);
 					position:relative;
 					width: 230px;
 					margin-right: 30px;
+					.cover_editor{
+						width: 230px;						
+						.cover{
+							height: 338px;
+							width: 230px;
+							background: url(../images/dds.jpg)
+						}
+						.editor{
+							@include font-sub(16px,#676767);
+						}
+					}
+					.messageboard{
+						width: 230px;
+						.dajiashuo{
+							margin-top: 20px;
+							@include spriteImg($icons,"dajiashuo");
+							background-position : sprite-position($icons,"dajiashuo");
+						}
+						.board{
+							margin-top: 16px;
+							width:230px;
+							background-color:#fff;						
+							div{
+								position: relative;
+								height: 94px;
+								margin: 0 auto;
+								padding-top: 5px;
+								width: 200px;
+								p{
+
+									word-break:break-word;
+								}
+								&:after{
+									content: "";
+									position: absolute;
+									top: 94px;
+									left: -10px;
+									z-index:1;
+									width:220px;
+									height: 1px;
+									background-color:#585757;
+								}
+							} 
+
+						}
+					}
 				}
 				.right{
 					width: 900px;

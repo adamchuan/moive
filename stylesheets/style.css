@@ -85,7 +85,7 @@ body {
 副字体）---18px、正文评论字体---16px。在不考虑颜色的情况下，各类型字体具有自己的特
 点。请慎重使用以及改动。
                                                    -----2014级开发部，宁折不弯的小野人*/
-/* line 10, ../sass/style.scss */
+/* line 9, ../sass/style.scss */
 .wrapper {
   position: relative;
   min-width: 1240px;
@@ -95,7 +95,7 @@ body {
 }
 
 /* 头部 */
-/* line 18, ../sass/style.scss */
+/* line 17, ../sass/style.scss */
 .header {
   position: fixed;
   top: 0;
@@ -111,28 +111,28 @@ body {
 :root .header {
   filter: none\0/IE9;
 }
-/* line 23, ../sass/style.scss */
+/* line 22, ../sass/style.scss */
 .header .inner {
   position: relative;
   width: 1240px;
   margin: 0 auto;
   height: 50px;
 }
-/* line 29, ../sass/style.scss */
+/* line 28, ../sass/style.scss */
 .header .logo {
   float: left;
   margin: 7px 36px 0 0;
-  background-image: url('/images/icons-s65f4c88903.png');
-  background-position: 0 -169px;
+  background-image: url('/images/icons-sa3ca1be2d4.png');
+  background-position: 0 -192px;
   width: 150px;
   height: 36px;
 }
-/* line 34, ../sass/style.scss */
+/* line 33, ../sass/style.scss */
 .header .nav_list {
   float: left;
   height: 50px;
 }
-/* line 38, ../sass/style.scss */
+/* line 37, ../sass/style.scss */
 .header .nav {
   position: relative;
   float: left;
@@ -142,11 +142,11 @@ body {
   height: 50px;
   text-align: center;
 }
-/* line 39, ../sass/style.scss */
+/* line 38, ../sass/style.scss */
 .header .nav:first-child {
   margin-left: 0;
 }
-/* line 50, ../sass/style.scss */
+/* line 49, ../sass/style.scss */
 .header .nav:hover {
   *zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#1AFFFFFF', endColorstr='#1AFFFFFF');
@@ -157,7 +157,7 @@ body {
 :root .header .nav:hover {
   filter: none\0/IE9;
 }
-/* line 52, ../sass/style.scss */
+/* line 51, ../sass/style.scss */
 .header .nav:hover:after {
   position: absolute;
   top: 38px;
@@ -168,12 +168,12 @@ body {
   background-color: #fff;
   content: "";
 }
-/* line 60, ../sass/style.scss */
+/* line 59, ../sass/style.scss */
 .header .nav:hover .child_nav {
   display: block;
   animation: fadein 0.5s both;
 }
-/* line 65, ../sass/style.scss */
+/* line 64, ../sass/style.scss */
 .header .nav .child_nav {
   display: none;
   position: absolute;
@@ -191,18 +191,18 @@ body {
 :root .header .nav .child_nav {
   filter: none\0/IE9;
 }
-/* line 73, ../sass/style.scss */
+/* line 72, ../sass/style.scss */
 .header .nav .child_nav a {
   display: block;
   margin-top: 5px;
   font-size: 14px;
   color: #fff;
 }
-/* line 78, ../sass/style.scss */
+/* line 77, ../sass/style.scss */
 .header .nav .child_nav a:last-child {
   margin-bottom: 5px;
 }
-/* line 84, ../sass/style.scss */
+/* line 83, ../sass/style.scss */
 .header .search_wrapper {
   position: relative;
   float: left;
@@ -212,7 +212,7 @@ body {
   border-radius: 5px;
   background-color: #fff;
 }
-/* line 92, ../sass/style.scss */
+/* line 91, ../sass/style.scss */
 .header .search_wrapper .search_input {
   margin: 5px 13px;
   height: 15px;
@@ -223,7 +223,7 @@ body {
   border: 0px;
   outline: none;
 }
-/* line 102, ../sass/style.scss */
+/* line 101, ../sass/style.scss */
 .header .search_wrapper .search_btn {
   position: absolute;
   top: 0;
@@ -233,31 +233,31 @@ body {
   border-left: 1px solid #d9d9d9;
   cursor: pointer;
 }
-/* line 109, ../sass/style.scss */
+/* line 108, ../sass/style.scss */
 .header .search_wrapper .search_btn:before {
   display: block;
   margin: 5px auto;
-  background-image: url('/images/icons-s65f4c88903.png');
-  background-position: 0 -463px;
+  background-image: url('/images/icons-sa3ca1be2d4.png');
+  background-position: 0 -486px;
   width: 17px;
   height: 15px;
   content: " ";
 }
-/* line 117, ../sass/style.scss */
+/* line 116, ../sass/style.scss */
 .header .update_notice {
   position: relative;
   float: left;
   margin-left: 46px;
   height: 50px;
 }
-/* line 122, ../sass/style.scss */
+/* line 121, ../sass/style.scss */
 .header .update_notice:after {
   display: inline-block;
   vertical-align: middle;
   height: 100%;
   content: "";
 }
-/* line 128, ../sass/style.scss */
+/* line 127, ../sass/style.scss */
 .header .update_notice .update_msg {
   display: inline-block;
   margin-left: 5px;
@@ -269,25 +269,25 @@ body {
   overflow: hidden;
   white-space: nowrap;
 }
-/* line 137, ../sass/style.scss */
+/* line 136, ../sass/style.scss */
 .header .update_notice .word_jrgx {
   display: inline-block;
   vertical-align: middle;
-  background-image: url('/images/icons-s65f4c88903.png');
-  background-position: 0 -147px;
+  background-image: url('/images/icons-sa3ca1be2d4.png');
+  background-position: 0 -170px;
   width: 76px;
   height: 18px;
 }
-/* line 143, ../sass/style.scss */
+/* line 142, ../sass/style.scss */
 .header .update_notice:hover .update_msg {
   text-decoration: underline;
 }
-/* line 146, ../sass/style.scss */
+/* line 145, ../sass/style.scss */
 .header .update_notice:hover .more_notice {
   display: block;
   animation: fadein 0.5s both;
 }
-/* line 151, ../sass/style.scss */
+/* line 150, ../sass/style.scss */
 .header .update_notice .more_notice {
   display: none;
   position: absolute;
@@ -307,7 +307,7 @@ body {
 :root .header .update_notice .more_notice {
   filter: none\0/IE9;
 }
-/* line 162, ../sass/style.scss */
+/* line 161, ../sass/style.scss */
 .header .update_notice .more_notice a {
   display: block;
   margin-top: 5px;
@@ -317,15 +317,15 @@ body {
   overflow: hidden;
   white-space: nowrap;
 }
-/* line 168, ../sass/style.scss */
+/* line 167, ../sass/style.scss */
 .header .update_notice .more_notice a:last-child {
   margin-bottom: 5px;
 }
-/* line 171, ../sass/style.scss */
+/* line 170, ../sass/style.scss */
 .header .update_notice .more_notice a:hover {
   text-decoration: underline;
 }
-/* line 177, ../sass/style.scss */
+/* line 176, ../sass/style.scss */
 .header .sns_wrapper {
   position: absolute;
   z-index: 2;
@@ -333,169 +333,169 @@ body {
   top: 0;
   bottom: 0;
 }
-/* line 183, ../sass/style.scss */
+/* line 182, ../sass/style.scss */
 .header .sns_wrapper:after {
   display: inline-block;
   vertical-align: middle;
   height: 100%;
   content: "";
 }
-/* line 189, ../sass/style.scss */
+/* line 188, ../sass/style.scss */
 .header .sns_wrapper .item {
   display: inline-block;
   vertical-align: middle;
   cursor: pointer;
 }
-/* line 194, ../sass/style.scss */
+/* line 193, ../sass/style.scss */
 .header .sns_wrapper .logo_weibo {
-  background-image: url('/images/icons-s65f4c88903.png');
-  background-position: 0 -630px;
+  background-image: url('/images/icons-sa3ca1be2d4.png');
+  background-position: 0 -653px;
   width: 34px;
   height: 26px;
 }
-/* line 198, ../sass/style.scss */
+/* line 197, ../sass/style.scss */
 .header .icon_w {
   display: inline-block;
   margin-top: 15px;
-  background-image: url('/images/icons-s65f4c88903.png');
-  background-position: 0 -439px;
+  background-image: url('/images/icons-sa3ca1be2d4.png');
+  background-position: 0 -462px;
   width: 36px;
   height: 20px;
   color: transparent;
 }
-/* line 203, ../sass/style.scss */
+/* line 202, ../sass/style.scss */
 .header .icon_w.nav_zx {
-  background-position: 0 -439px;
+  background-position: 0 -462px;
 }
-/* line 206, ../sass/style.scss */
+/* line 205, ../sass/style.scss */
 .header .icon_w.nav_zixun {
-  background-position: 0 -391px;
+  background-position: 0 -414px;
 }
-/* line 209, ../sass/style.scss */
+/* line 208, ../sass/style.scss */
 .header .icon_w.nav_zj {
-  background-position: 0 -415px;
+  background-position: 0 -438px;
 }
-/* line 212, ../sass/style.scss */
+/* line 211, ../sass/style.scss */
 .header .icon_w.nav_dy {
-  background-position: 0 -295px;
+  background-position: 0 -318px;
 }
-/* line 215, ../sass/style.scss */
+/* line 214, ../sass/style.scss */
 .header .icon_w.nav_ftp {
-  background-position: 0 -319px;
+  background-position: 0 -342px;
 }
-/* line 218, ../sass/style.scss */
+/* line 217, ../sass/style.scss */
 .header .icon_w.nav_jj {
-  background-position: 0 -343px;
+  background-position: 0 -366px;
 }
-/* line 221, ../sass/style.scss */
+/* line 220, ../sass/style.scss */
 .header .icon_w.nav_qp {
-  background-position: 0 -367px;
+  background-position: 0 -390px;
 }
 
-/* line 227, ../sass/style.scss */
+/* line 226, ../sass/style.scss */
 .indexbanner {
   width: 100%;
   height: 550px;
   overflow: hidden;
 }
-/* line 231, ../sass/style.scss */
+/* line 230, ../sass/style.scss */
 .indexbanner .bannerimg {
   width: 100%;
   height: auto;
 }
 
-/* line 238, ../sass/style.scss */
+/* line 237, ../sass/style.scss */
 .area_row {
   position: relative;
   width: 1240px;
   margin: 0 auto;
   overflow: hidden;
 }
-/* line 243, ../sass/style.scss */
+/* line 242, ../sass/style.scss */
 .area_row .area_header {
   position: relative;
   overflow: hidden;
 }
-/* line 246, ../sass/style.scss */
+/* line 245, ../sass/style.scss */
 .area_row .area_header .header_btn_wrapper {
   position: absolute;
   right: 0;
   top: 5px;
 }
-/* line 251, ../sass/style.scss */
+/* line 250, ../sass/style.scss */
 .area_row .area_header .btn_asj {
   display: inline-block;
   vertical-align: middle;
-  background-image: url('/images/icons-s65f4c88903.png');
+  background-image: url('/images/icons-sa3ca1be2d4.png');
   background-position: 0 -50px;
   width: 62px;
   height: 21px;
   cursor: pointer;
 }
-/* line 256, ../sass/style.scss */
+/* line 255, ../sass/style.scss */
 .area_row .area_header .btn_asj.on {
   background-position: 0 -75px;
 }
-/* line 260, ../sass/style.scss */
+/* line 259, ../sass/style.scss */
 .area_row .area_header .icon_line {
   display: inline-block;
   vertical-align: middle;
-  background-image: url('/images/icons-s65f4c88903.png');
-  background-position: 0 -122px;
+  background-image: url('/images/icons-sa3ca1be2d4.png');
+  background-position: 0 -145px;
   width: 21px;
   height: 21px;
 }
-/* line 266, ../sass/style.scss */
+/* line 265, ../sass/style.scss */
 .area_row .area_header .btn_adj {
   display: inline-block;
   vertical-align: middle;
-  background-image: url('/images/icons-s65f4c88903.png');
+  background-image: url('/images/icons-sa3ca1be2d4.png');
   background-position: 0 0;
   width: 120px;
   height: 21px;
   cursor: pointer;
 }
-/* line 271, ../sass/style.scss */
+/* line 270, ../sass/style.scss */
 .area_row .area_header .btn_adj.on {
   background-position: 0 -25px;
 }
-/* line 276, ../sass/style.scss */
+/* line 275, ../sass/style.scss */
 .area_row .area_title {
   color: transparent;
 }
-/* line 278, ../sass/style.scss */
+/* line 277, ../sass/style.scss */
 .area_row .area_title .word {
   display: block;
 }
-/* line 280, ../sass/style.scss */
+/* line 279, ../sass/style.scss */
 .area_row .area_title .word.dy {
-  background-image: url('/images/icons-s65f4c88903.png');
-  background-position: 0 -519px;
+  background-image: url('/images/icons-sa3ca1be2d4.png');
+  background-position: 0 -542px;
   width: 121px;
   height: 33px;
 }
-/* line 283, ../sass/style.scss */
+/* line 282, ../sass/style.scss */
 .area_row .area_title .word.zx {
-  background-image: url('/images/icons-s65f4c88903.png');
-  background-position: 0 -593px;
+  background-image: url('/images/icons-sa3ca1be2d4.png');
+  background-position: 0 -616px;
   width: 217px;
   height: 33px;
 }
-/* line 286, ../sass/style.scss */
+/* line 285, ../sass/style.scss */
 .area_row .area_title .word.zj {
-  background-image: url('/images/icons-s65f4c88903.png');
-  background-position: 0 -556px;
+  background-image: url('/images/icons-sa3ca1be2d4.png');
+  background-position: 0 -579px;
   width: 192px;
   height: 33px;
 }
-/* line 289, ../sass/style.scss */
+/* line 288, ../sass/style.scss */
 .area_row .area_title .word.dsj {
-  background-image: url('/images/icons-s65f4c88903.png');
-  background-position: 0 -482px;
+  background-image: url('/images/icons-sa3ca1be2d4.png');
+  background-position: 0 -505px;
   width: 210px;
   height: 33px;
 }
-/* line 293, ../sass/style.scss */
+/* line 292, ../sass/style.scss */
 .area_row .area_title:after {
   display: block;
   margin-top: 7px;
@@ -506,29 +506,29 @@ body {
   content: " ";
 }
 
-/* line 305, ../sass/style.scss */
+/* line 304, ../sass/style.scss */
 .list_area {
   width: 870px;
   margin: 25px 0 0;
   box-sizing: border-box;
 }
-/* line 309, ../sass/style.scss */
+/* line 308, ../sass/style.scss */
 .list_area .index_tiny_img {
   width: 150px;
   height: 225px;
 }
-/* line 313, ../sass/style.scss */
+/* line 312, ../sass/style.scss */
 .list_area .list_wrapper {
   overflow: hidden;
   margin-left: -30px;
 }
-/* line 316, ../sass/style.scss */
+/* line 315, ../sass/style.scss */
 .list_area .list_wrapper .item {
   float: left;
   width: 150px;
   margin: 10px 0 0 30px;
 }
-/* line 321, ../sass/style.scss */
+/* line 320, ../sass/style.scss */
 .list_area .list_wrapper .name {
   margin-top: 5px;
   height: 20px;
@@ -541,33 +541,33 @@ body {
   white-space: nowrap;
 }
 
-/* line 332, ../sass/style.scss */
+/* line 331, ../sass/style.scss */
 .single_area {
   margin: 25px 0 0 0;
   width: 320px;
 }
 
-/* line 336, ../sass/style.scss */
+/* line 335, ../sass/style.scss */
 .single_wrapper {
   margin-top: 10px;
 }
-/* line 338, ../sass/style.scss */
+/* line 337, ../sass/style.scss */
 .single_wrapper .select_wrapper {
   margin-top: 5px;
   height: 20px;
   text-align: right;
 }
-/* line 343, ../sass/style.scss */
+/* line 342, ../sass/style.scss */
 .single_wrapper .index_single_img {
   width: 320px;
   height: 485px;
 }
-/* line 347, ../sass/style.scss */
+/* line 346, ../sass/style.scss */
 .single_wrapper .index_mulit_img {
   width: 320px;
   height: 225px;
 }
-/* line 351, ../sass/style.scss */
+/* line 350, ../sass/style.scss */
 .single_wrapper .options {
   display: inline-block;
   width: 17px;
@@ -576,21 +576,21 @@ body {
   border-radius: 17px;
   cursor: pointer;
 }
-/* line 357, ../sass/style.scss */
+/* line 356, ../sass/style.scss */
 .single_wrapper .options.on {
   background-color: #00a0e9;
 }
-/* line 362, ../sass/style.scss */
+/* line 361, ../sass/style.scss */
 .single_wrapper .item {
   display: block;
   position: relative;
   margin-top: 35px;
 }
-/* line 366, ../sass/style.scss */
+/* line 365, ../sass/style.scss */
 .single_wrapper .item:first-child {
   margin-top: 0;
 }
-/* line 369, ../sass/style.scss */
+/* line 368, ../sass/style.scss */
 .single_wrapper .item .msg_wrapper {
   position: absolute;
   bottom: 0;
@@ -609,14 +609,14 @@ body {
 :root .single_wrapper .item .msg_wrapper {
   filter: none\0/IE9;
 }
-/* line 378, ../sass/style.scss */
+/* line 377, ../sass/style.scss */
 .single_wrapper .item .msg_wrapper em {
   font-size: 25px;
   color: #000;
 }
 
 /* 海报 */
-/* line 387, ../sass/style.scss */
+/* line 386, ../sass/style.scss */
 .index_ad_img {
   display: block;
   margin: 10px auto 0;
@@ -624,7 +624,7 @@ body {
   height: 100px;
 }
 
-/* line 393, ../sass/style.scss */
+/* line 392, ../sass/style.scss */
 .pr {
   position: absolute;
   top: 0;
@@ -633,7 +633,7 @@ body {
 }
 
 /* 底部 */
-/* line 400, ../sass/style.scss */
+/* line 399, ../sass/style.scss */
 .footer {
   position: absolute;
   bottom: 0;
@@ -645,38 +645,38 @@ body {
   text-align: center;
   color: #fff;
 }
-/* line 408, ../sass/style.scss */
+/* line 407, ../sass/style.scss */
 .footer .foot_nav_wrapper {
   display: inline-block;
   vertical-align: middle;
   text-align: left;
 }
-/* line 412, ../sass/style.scss */
+/* line 411, ../sass/style.scss */
 .footer .foot_nav_wrapper li {
   margin-top: 25px;
 }
-/* line 414, ../sass/style.scss */
+/* line 413, ../sass/style.scss */
 .footer .foot_nav_wrapper li:first-child {
   margin-top: 0;
 }
-/* line 418, ../sass/style.scss */
+/* line 417, ../sass/style.scss */
 .footer .foot_nav_wrapper h3 {
   font-weight: normal;
   font-size: 18px;
   color: #fff;
 }
-/* line 423, ../sass/style.scss */
+/* line 422, ../sass/style.scss */
 .footer .foot_nav_wrapper .item {
   color: #fff;
   font-size: 14px;
   margin-right: 10px;
   transition: color 0.5s;
 }
-/* line 428, ../sass/style.scss */
+/* line 427, ../sass/style.scss */
 .footer .foot_nav_wrapper .item:hover {
   color: #f2f2f2;
 }
-/* line 433, ../sass/style.scss */
+/* line 432, ../sass/style.scss */
 .footer .copyright {
   margin-left: 70px;
   display: inline-block;
@@ -684,41 +684,41 @@ body {
   text-align: center;
   color: #fff;
 }
-/* line 440, ../sass/style.scss */
+/* line 439, ../sass/style.scss */
 .footer:after {
   display: inline-block;
   content: "";
   vertical-align: middle;
   height: 100%;
 }
-/* line 446, ../sass/style.scss */
+/* line 445, ../sass/style.scss */
 .footer .icon_ftp {
   position: relative;
   display: inline-block;
   margin-right: 3px;
   vertical-align: middle;
-  background-image: url('/images/icons-s65f4c88903.png');
-  background-position: 0 -100px;
+  background-image: url('/images/icons-sa3ca1be2d4.png');
+  background-position: 0 -123px;
   width: 18px;
   height: 18px;
 }
-/* line 453, ../sass/style.scss */
+/* line 452, ../sass/style.scss */
 .footer .icon_nav {
   position: relative;
   display: inline-block;
   margin-right: 3px;
   vertical-align: middle;
-  background-image: url('/images/icons-s65f4c88903.png');
-  background-position: 0 -273px;
+  background-image: url('/images/icons-sa3ca1be2d4.png');
+  background-position: 0 -296px;
   width: 18px;
   height: 18px;
 }
 
-/* line 461, ../sass/style.scss */
+/* line 460, ../sass/style.scss */
 .logo_ghy {
   display: inline-block;
-  background-image: url('/images/icons-s65f4c88903.png');
-  background-position: 0 -209px;
+  background-image: url('/images/icons-sa3ca1be2d4.png');
+  background-position: 0 -232px;
   width: 67px;
   height: 60px;
 }
@@ -746,20 +746,16 @@ body {
 =================================================================================
 =================================================================================
 =================================================================================*/
-/* line 492, ../sass/style.scss */
+/* line 491, ../sass/style.scss */
 .index3_wrapper {
   position: relative;
   min-width: 1240px;
   min-height: 100%;
   padding-bottom: 38px;
   box-sizing: border-box;
-  /*======================================================================
-  =========================================================================
-  ========================================================================
+  /*=======================================================================
   =============================中部main内容   ============================================
-  ==========================================================================
-  ===========================================================
-  ===================================================================================*/
+  ==================================================================================*/
   /*======================================================================
   =========================================================================
   ========================================================================
@@ -768,7 +764,7 @@ body {
   ===========================================================
   ===================================================================*/
 }
-/* line 499, ../sass/style.scss */
+/* line 498, ../sass/style.scss */
 .index3_wrapper .index3_header {
   position: fixed;
   top: 0;
@@ -784,21 +780,25 @@ body {
 :root .index3_wrapper .index3_header {
   filter: none\0/IE9;
 }
-/* line 505, ../sass/style.scss */
+/* line 504, ../sass/style.scss */
 .index3_wrapper .index3_header .index3_inner {
   position: relative;
   width: 1240px;
   margin: 0 auto;
   height: 50px;
 }
-/* line 511, ../sass/style.scss */
+/* line 510, ../sass/style.scss */
 .index3_wrapper .index3_header .index3_logo {
   float: left;
   margin: 7px 36px 0 0;
-  background-image: url("../images/icons-s65f4c88903.png");
-  background-position: 0 -169px;
+  background-image: url('/images/icons-sa3ca1be2d4.png');
+  background-position: 0 -192px;
   width: 150px;
   height: 36px;
+  	/*background-image: url('../images/icons-s65f4c88903.png');
+      background-position: 0 -169px;
+      width: 150px;
+      height: 36px;*/
 }
 /* line 519, ../sass/style.scss */
 .index3_wrapper .index3_header .index3_nav_list {
@@ -912,14 +912,13 @@ body {
 .index3_wrapper .index3_header .index3_search_wrapper .index3_search_btn:before {
   display: block;
   margin: 5px auto;
-  /*@include spriteImg($icons,search);*/
-  background-image: url("../images/icons-s65f4c88903.png");
-  background-position: 0 -463px;
+  background-image: url('/images/icons-sa3ca1be2d4.png');
+  background-position: 0 -486px;
   width: 17px;
   height: 15px;
   content: " ";
 }
-/* line 608, ../sass/style.scss */
+/* line 604, ../sass/style.scss */
 .index3_wrapper .index3_header .index3_sns_wrapper {
   position: absolute;
   z-index: 2;
@@ -927,101 +926,105 @@ body {
   top: 0;
   bottom: 0;
 }
-/* line 614, ../sass/style.scss */
+/* line 610, ../sass/style.scss */
 .index3_wrapper .index3_header .index3_sns_wrapper:after {
   display: inline-block;
   vertical-align: middle;
   height: 100%;
   content: "";
 }
-/* line 620, ../sass/style.scss */
+/* line 616, ../sass/style.scss */
 .index3_wrapper .index3_header .index3_sns_wrapper .item {
   display: inline-block;
   vertical-align: middle;
   cursor: pointer;
 }
-/* line 625, ../sass/style.scss */
+/* line 621, ../sass/style.scss */
 .index3_wrapper .index3_header .index3_sns_wrapper .logo_weibo {
-  background-image: url("../images/icons-s65f4c88903.png");
-  background-position: 0 -630px;
+  background-image: url('/images/icons-sa3ca1be2d4.png');
+  background-position: 0 -653px;
   width: 34px;
   height: 26px;
 }
-/* line 632, ../sass/style.scss */
+/* line 625, ../sass/style.scss */
 .index3_wrapper .index3_header .icon_w {
   display: inline-block;
   margin-top: 15px;
-  /*@include spriteImg($icons,"nav_zx");*/
-  background-image: url("../images/icons-s65f4c88903.png");
-  background-position: 0 -439px;
+  background-image: url('/images/icons-sa3ca1be2d4.png');
+  background-position: 0 -462px;
   width: 36px;
   height: 20px;
+  /*@include spriteImg($icons,"nav_zx");
+  background-image: url('../images/icons-s65f4c88903.png');
+  background-position: 0 -439px;
+  width: 36px;
+  height: 20px;*/
   color: transparent;
 }
-/* line 642, ../sass/style.scss */
+/* line 636, ../sass/style.scss */
 .index3_wrapper .index3_header .icon_w.nav_zx {
-  background-position: 0 -439px;
+  background-position: 0 -462px;
+}
+/* line 639, ../sass/style.scss */
+.index3_wrapper .index3_header .icon_w.nav_zixun {
+  background-position: 0 -414px;
+}
+/* line 642, ../sass/style.scss */
+.index3_wrapper .index3_header .icon_w.nav_zj {
+  background-position: 0 -438px;
 }
 /* line 645, ../sass/style.scss */
-.index3_wrapper .index3_header .icon_w.nav_zixun {
-  background-position: 0 -391px;
+.index3_wrapper .index3_header .icon_w.nav_dy {
+  background-position: 0 -318px;
 }
 /* line 648, ../sass/style.scss */
-.index3_wrapper .index3_header .icon_w.nav_zj {
-  background-position: 0 -415px;
+.index3_wrapper .index3_header .icon_w.nav_ftp {
+  background-position: 0 -342px;
 }
 /* line 651, ../sass/style.scss */
-.index3_wrapper .index3_header .icon_w.nav_dy {
-  background-position: 0 -295px;
+.index3_wrapper .index3_header .icon_w.nav_jj {
+  background-position: 0 -366px;
 }
 /* line 654, ../sass/style.scss */
-.index3_wrapper .index3_header .icon_w.nav_ftp {
-  background-position: 0 -319px;
-}
-/* line 657, ../sass/style.scss */
-.index3_wrapper .index3_header .icon_w.nav_jj {
-  background-position: 0 -343px;
-}
-/* line 660, ../sass/style.scss */
 .index3_wrapper .index3_header .icon_w.nav_qp {
-  background-position: 0 -367px;
+  background-position: 0 -390px;
 }
-/* line 672, ../sass/style.scss */
+/* line 662, ../sass/style.scss */
 .index3_wrapper .index3_main {
   width: 100%;
   position: relative;
   margin-top: 50px;
   background-color: #f1f1f1;
 }
-/* line 677, ../sass/style.scss */
+/* line 667, ../sass/style.scss */
 .index3_wrapper .index3_main .index3_main_inner {
   width: 960px;
   margin: 0 auto;
 }
-/* line 680, ../sass/style.scss */
+/* line 670, ../sass/style.scss */
 .index3_wrapper .index3_main .index3_main_inner .title {
   position: relative;
   width: 960px;
   height: 74px;
   margin: 0 auto;
 }
-/* line 685, ../sass/style.scss */
+/* line 675, ../sass/style.scss */
 .index3_wrapper .index3_main .index3_main_inner .title div {
   width: 600px;
 }
-/* line 687, ../sass/style.scss */
+/* line 677, ../sass/style.scss */
 .index3_wrapper .index3_main .index3_main_inner .title div .main_title {
   font-family: "Microsoft YaHei";
   font-size: 32px;
   color: #00a0e9;
 }
-/* line 690, ../sass/style.scss */
+/* line 680, ../sass/style.scss */
 .index3_wrapper .index3_main .index3_main_inner .title div .sub_title {
   font-family: "Microsoft YaHei";
   font-size: 18px;
   color: #676767;
 }
-/* line 694, ../sass/style.scss */
+/* line 684, ../sass/style.scss */
 .index3_wrapper .index3_main .index3_main_inner .title .icon_attention {
   background-color: #00a0e9;
   height: 30px;
@@ -1030,23 +1033,81 @@ body {
   bottom: 0px;
   right: 0px;
 }
-/* line 703, ../sass/style.scss */
+/* line 693, ../sass/style.scss */
 .index3_wrapper .index3_main .index3_main_inner .content {
   position: relative;
   width: 960px;
   margin: 0 auto;
 }
-/* line 707, ../sass/style.scss */
+/* line 697, ../sass/style.scss */
 .index3_wrapper .index3_main .index3_main_inner .content .left {
   position: relative;
   width: 230px;
   margin-right: 30px;
 }
+/* line 701, ../sass/style.scss */
+.index3_wrapper .index3_main .index3_main_inner .content .left .cover_editor {
+  width: 230px;
+}
+/* line 703, ../sass/style.scss */
+.index3_wrapper .index3_main .index3_main_inner .content .left .cover_editor .cover {
+  height: 338px;
+  width: 230px;
+  background: url(../images/dds.jpg);
+}
+/* line 708, ../sass/style.scss */
+.index3_wrapper .index3_main .index3_main_inner .content .left .cover_editor .editor {
+  font-family: "Microsoft YaHei";
+  font-size: 16px;
+  color: #676767;
+}
 /* line 712, ../sass/style.scss */
+.index3_wrapper .index3_main .index3_main_inner .content .left .messageboard {
+  width: 230px;
+}
+/* line 714, ../sass/style.scss */
+.index3_wrapper .index3_main .index3_main_inner .content .left .messageboard .dajiashuo {
+  margin-top: 20px;
+  background-image: url('/images/icons-sa3ca1be2d4.png');
+  background-position: 0 -100px;
+  width: 68px;
+  height: 19px;
+  background-position: 0 -100px;
+}
+/* line 719, ../sass/style.scss */
+.index3_wrapper .index3_main .index3_main_inner .content .left .messageboard .board {
+  margin-top: 16px;
+  width: 230px;
+  background-color: #fff;
+}
+/* line 723, ../sass/style.scss */
+.index3_wrapper .index3_main .index3_main_inner .content .left .messageboard .board div {
+  position: relative;
+  height: 94px;
+  margin: 0 auto;
+  padding-top: 5px;
+  width: 200px;
+}
+/* line 729, ../sass/style.scss */
+.index3_wrapper .index3_main .index3_main_inner .content .left .messageboard .board div p {
+  word-break: break-word;
+}
+/* line 733, ../sass/style.scss */
+.index3_wrapper .index3_main .index3_main_inner .content .left .messageboard .board div:after {
+  content: "";
+  position: absolute;
+  top: 94px;
+  left: -10px;
+  z-index: 1;
+  width: 220px;
+  height: 1px;
+  background-color: #585757;
+}
+/* line 748, ../sass/style.scss */
 .index3_wrapper .index3_main .index3_main_inner .content .right {
   width: 900px;
 }
-/* line 728, ../sass/style.scss */
+/* line 764, ../sass/style.scss */
 .index3_wrapper .index3_footer {
   position: absolute;
   bottom: 0;
@@ -1057,14 +1118,14 @@ body {
   text-align: center;
   color: #fff;
 }
-/* line 736, ../sass/style.scss */
+/* line 772, ../sass/style.scss */
 .index3_wrapper .index3_footer .index3_inner {
   position: relative;
   width: 1240px;
   margin: 0 auto;
   height: 38px;
 }
-/* line 742, ../sass/style.scss */
+/* line 778, ../sass/style.scss */
 .index3_wrapper .index3_footer .index3_inner .copyright {
   height: 38px;
   margin-left: 70px;
