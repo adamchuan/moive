@@ -21,3 +21,8 @@
 	color:$color;
 }
 
+@mixin font-content($color:#585757){
+	font-family:"SimSun";
+	font-size:12px;
+	color:$color;
+}

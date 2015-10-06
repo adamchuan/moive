@@ -487,13 +487,23 @@ $icons : sprite-map("icons/*.png",$spacing: 4px);
 =================================================================================
 =================================================================================
 =================================================================================*/
+@mixin clearfix(){
+	&:after{
+		content:".";
+		display:block;
+		height:0;
+		clear:both;
+		visibility:hidden;
+	}
+}
 
 .index3_wrapper{
 	position:relative;
 	min-width:1240px;
 	min-height:100%;
-	padding-bottom:38px;
+	padding-bottom:116px;
 	box-sizing:border-box;
+	background-color:#f1f1f1;
 
 .index3_header{
 	position:fixed;
@@ -663,7 +673,6 @@ $icons : sprite-map("icons/*.png",$spacing: 4px);
 		width: 100%;
 		position: relative;
 		margin-top: 50px;
-		background-color:#f1f1f1;
 		.index3_main_inner{
 			width: 960px;
 			margin:0 auto;
@@ -682,12 +691,33 @@ $icons : sprite-map("icons/*.png",$spacing: 4px);
 					}
 				}
 				.icon_attention{
-					background-color:#00a0e9;
-					height: 30px;
-					width: 200px;
+					height: 31px;
+					width: 180px;
 					position: absolute;
 					bottom: 0px;
 					right: 0px;
+					div{
+						float: left;
+						margin-right: 10px;
+						cursor:pointer;
+					}
+					.weibo{
+						@include spriteImg($icons,"share_weibo");
+								background-position : sprite-position($icons,"share_weibo");
+					}
+					.weixin{
+						@include spriteImg($icons,"share_wechat");
+								background-position : sprite-position($icons,"share_wechat");
+					}
+					.qzone{
+						@include spriteImg($icons,"share_qzone");
+								background-position : sprite-position($icons,"share_qzone");
+					}
+					.renren{
+						@include spriteImg($icons,"share_renren");
+								background-position : sprite-position($icons,"share_renren");
+					}
+
 				}
 			}
 			.content{
@@ -697,6 +727,7 @@ $icons : sprite-map("icons/*.png",$spacing: 4px);
 				.left{
 					position:relative;
 					width: 230px;
+					float: left;
 					margin-right: 30px;
 					.cover_editor{
 						width: 230px;						
@@ -719,15 +750,16 @@ $icons : sprite-map("icons/*.png",$spacing: 4px);
 						.board{
 							margin-top: 16px;
 							width:230px;
+							height: 440px;
 							background-color:#fff;						
-							div{
+							.comment{
 								position: relative;
-								height: 94px;
 								margin: 0 auto;
+								height: 96px;
 								padding-top: 5px;
 								width: 200px;
 								p{
-
+									@include font-content();
 									word-break:break-word;
 								}
 								&:after{
@@ -741,13 +773,123 @@ $icons : sprite-map("icons/*.png",$spacing: 4px);
 									background-color:#585757;
 								}
 							} 
-
+							.next_page{
+								float: right;
+								clear:both;
+								margin-right: 10px;
+								margin-top: 10px;	
+								cursor:pointer;
+								@include spriteImg($icons,"xiayiye");
+								background-position : sprite-position($icons,"xiayiye");
+							}
+							.previous_page{		
+								float: right;
+								/*clear:both;*/
+								margin-right: 10px;
+								margin-top: 10px;	
+								cursor:pointer;			
+								@include spriteImg($icons,"shangyiye");
+								background-position : sprite-position($icons,"shangyiye");
+							}							
 						}
+						.woshuo{
+							margin-top: 20px;
+							@include spriteImg($icons,"woshuo");
+							background-position : sprite-position($icons,"woshuo");
+						}
+						.mycomment{
+							border:0; 
+							overflow: hidden;
+							height: 114px;
+							width: 230px;
+							margin-top: 16px;
+						}
+						.index3_submit{
+								float: right;
+								clear:both;
+								margin-right: 10px;
+								margin-top: 10px;	
+								cursor:pointer;
+								@include spriteImg($icons,"index3_submit");
+								background-position : sprite-position($icons,"index3_submit");
+							}
 					}
 				}
 				.right{
-					width: 900px;
+					position: relative;
+					width: 700px;
+					height: 1062px;
+					float: right;
+					p,a{
+						@include font-content($color:#000000);
+					}
+					.index3_nice{
+						position:absolute;
+						top: 700px;
+						left: 270px;
+						cursor:pointer;
+						@include spriteImg($icons,"index3_nice");
+							background-position : sprite-position($icons,"index3_nice");							
+					}		
+					.like_number{
+						position:absolute;
+						top: 740px;
+						left: 330px;
+						p{
+							@include font-sub(20px,#00a0e9);
+						}								
+					}
+					.index3_bad{
+						position:absolute;
+						top: 700px;
+						right: 270px;
+						cursor:pointer;
+						@include spriteImg($icons,"index3_bad");
+							background-position : sprite-position($icons,"index3_bad");
+					}		
+					.unlike_number{
+						position:absolute;
+						top: 740px;
+						right:240px;
+						p{
+							@include font-sub(20px,#585757);
+						}								
+					}	
+					.connected_movie{
+						position: absolute;
+						bottom:0px;
+						width: 100%;
+						.sub_title{
+							@include spriteImg($icons,"connected_movie");
+							background-position : sprite-position($icons,"connected_movie");
+						}
+						.movie{
+							width: 100%;
+							@include clearfix();
+							>div{
+								float: left;
+								width: 120px;
+								margin-top: 10px;
+								height: 172px;
+								margin-right: 20px;
+								div{
+									width: 120px;
+									height: 172px;
+									background-color:blue;
+									cursor:pointer;
+								}
+								p{
+									cursor:pointer;
+									text-align:center;
+									font-family:"SimSun";
+									font-size:18px;
+									color:#464646;
+								}
+							}
+						}
+					}
 				}
+				@include clearfix();
 			}
 		}
 	}

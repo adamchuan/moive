@@ -122,8 +122,8 @@ body {
 .header .logo {
   float: left;
   margin: 7px 36px 0 0;
-  background-image: url('/images/icons-sa3ca1be2d4.png');
-  background-position: 0 -192px;
+  background-image: url('/images/icons-sb15b506933.png');
+  background-position: 0 -214px;
   width: 150px;
   height: 36px;
 }
@@ -237,8 +237,8 @@ body {
 .header .search_wrapper .search_btn:before {
   display: block;
   margin: 5px auto;
-  background-image: url('/images/icons-sa3ca1be2d4.png');
-  background-position: 0 -486px;
+  background-image: url('/images/icons-sb15b506933.png');
+  background-position: 0 -508px;
   width: 17px;
   height: 15px;
   content: " ";
@@ -273,8 +273,8 @@ body {
 .header .update_notice .word_jrgx {
   display: inline-block;
   vertical-align: middle;
-  background-image: url('/images/icons-sa3ca1be2d4.png');
-  background-position: 0 -170px;
+  background-image: url('/images/icons-sb15b506933.png');
+  background-position: 0 -192px;
   width: 76px;
   height: 18px;
 }
@@ -348,8 +348,8 @@ body {
 }
 /* line 193, ../sass/style.scss */
 .header .sns_wrapper .logo_weibo {
-  background-image: url('/images/icons-sa3ca1be2d4.png');
-  background-position: 0 -653px;
+  background-image: url('/images/icons-sb15b506933.png');
+  background-position: 0 -695px;
   width: 34px;
   height: 26px;
 }
@@ -357,39 +357,39 @@ body {
 .header .icon_w {
   display: inline-block;
   margin-top: 15px;
-  background-image: url('/images/icons-sa3ca1be2d4.png');
-  background-position: 0 -462px;
+  background-image: url('/images/icons-sb15b506933.png');
+  background-position: 0 -484px;
   width: 36px;
   height: 20px;
   color: transparent;
 }
 /* line 202, ../sass/style.scss */
 .header .icon_w.nav_zx {
-  background-position: 0 -462px;
+  background-position: 0 -484px;
 }
 /* line 205, ../sass/style.scss */
 .header .icon_w.nav_zixun {
-  background-position: 0 -414px;
+  background-position: 0 -436px;
 }
 /* line 208, ../sass/style.scss */
 .header .icon_w.nav_zj {
-  background-position: 0 -438px;
+  background-position: 0 -460px;
 }
 /* line 211, ../sass/style.scss */
 .header .icon_w.nav_dy {
-  background-position: 0 -318px;
+  background-position: 0 -340px;
 }
 /* line 214, ../sass/style.scss */
 .header .icon_w.nav_ftp {
-  background-position: 0 -342px;
+  background-position: 0 -364px;
 }
 /* line 217, ../sass/style.scss */
 .header .icon_w.nav_jj {
-  background-position: 0 -366px;
+  background-position: 0 -388px;
 }
 /* line 220, ../sass/style.scss */
 .header .icon_w.nav_qp {
-  background-position: 0 -390px;
+  background-position: 0 -412px;
 }
 
 /* line 226, ../sass/style.scss */
@@ -426,7 +426,7 @@ body {
 .area_row .area_header .btn_asj {
   display: inline-block;
   vertical-align: middle;
-  background-image: url('/images/icons-sa3ca1be2d4.png');
+  background-image: url('/images/icons-sb15b506933.png');
   background-position: 0 -50px;
   width: 62px;
   height: 21px;
@@ -440,7 +440,7 @@ body {
 .area_row .area_header .icon_line {
   display: inline-block;
   vertical-align: middle;
-  background-image: url('/images/icons-sa3ca1be2d4.png');
+  background-image: url('/images/icons-sb15b506933.png');
   background-position: 0 -145px;
   width: 21px;
   height: 21px;
@@ -449,7 +449,7 @@ body {
 .area_row .area_header .btn_adj {
   display: inline-block;
   vertical-align: middle;
-  background-image: url('/images/icons-sa3ca1be2d4.png');
+  background-image: url('/images/icons-sb15b506933.png');
   background-position: 0 0;
   width: 120px;
   height: 21px;
@@ -469,29 +469,29 @@ body {
 }
 /* line 279, ../sass/style.scss */
 .area_row .area_title .word.dy {
-  background-image: url('/images/icons-sa3ca1be2d4.png');
-  background-position: 0 -542px;
+  background-image: url('/images/icons-sb15b506933.png');
+  background-position: 0 -584px;
   width: 121px;
   height: 33px;
 }
 /* line 282, ../sass/style.scss */
 .area_row .area_title .word.zx {
-  background-image: url('/images/icons-sa3ca1be2d4.png');
-  background-position: 0 -616px;
+  background-image: url('/images/icons-sb15b506933.png');
+  background-position: 0 -658px;
   width: 217px;
   height: 33px;
 }
 /* line 285, ../sass/style.scss */
 .area_row .area_title .word.zj {
-  background-image: url('/images/icons-sa3ca1be2d4.png');
-  background-position: 0 -579px;
+  background-image: url('/images/icons-sb15b506933.png');
+  background-position: 0 -621px;
   width: 192px;
   height: 33px;
 }
 /* line 288, ../sass/style.scss */
 .area_row .area_title .word.dsj {
-  background-image: url('/images/icons-sa3ca1be2d4.png');
-  background-position: 0 -505px;
+  background-image: url('/images/icons-sb15b506933.png');
+  background-position: 0 -547px;
   width: 210px;
   height: 33px;
 }
@@ -697,7 +697,7 @@ body {
   display: inline-block;
   margin-right: 3px;
   vertical-align: middle;
-  background-image: url('/images/icons-sa3ca1be2d4.png');
+  background-image: url('/images/icons-sb15b506933.png');
   background-position: 0 -123px;
   width: 18px;
   height: 18px;
@@ -708,8 +708,8 @@ body {
   display: inline-block;
   margin-right: 3px;
   vertical-align: middle;
-  background-image: url('/images/icons-sa3ca1be2d4.png');
-  background-position: 0 -296px;
+  background-image: url('/images/icons-sb15b506933.png');
+  background-position: 0 -318px;
   width: 18px;
   height: 18px;
 }
@@ -717,8 +717,8 @@ body {
 /* line 460, ../sass/style.scss */
 .logo_ghy {
   display: inline-block;
-  background-image: url('/images/icons-sa3ca1be2d4.png');
-  background-position: 0 -232px;
+  background-image: url('/images/icons-sb15b506933.png');
+  background-position: 0 -254px;
   width: 67px;
   height: 60px;
 }
@@ -751,7 +751,7 @@ body {
   position: relative;
   min-width: 1240px;
   min-height: 100%;
-  padding-bottom: 38px;
+  padding-bottom: 116px;
   box-sizing: border-box;
   /*=======================================================================
   =============================中部main内容   ============================================
@@ -791,8 +791,8 @@ body {
 .index3_wrapper .index3_header .index3_logo {
   float: left;
   margin: 7px 36px 0 0;
-  background-image: url('/images/icons-sa3ca1be2d4.png');
-  background-position: 0 -192px;
+  background-image: url('/images/icons-sb15b506933.png');
+  background-position: 0 -214px;
   width: 150px;
   height: 36px;
   	/*background-image: url('../images/icons-s65f4c88903.png');
@@ -912,8 +912,8 @@ body {
 .index3_wrapper .index3_header .index3_search_wrapper .index3_search_btn:before {
   display: block;
   margin: 5px auto;
-  background-image: url('/images/icons-sa3ca1be2d4.png');
-  background-position: 0 -486px;
+  background-image: url('/images/icons-sb15b506933.png');
+  background-position: 0 -508px;
   width: 17px;
   height: 15px;
   content: " ";
@@ -941,8 +941,8 @@ body {
 }
 /* line 621, ../sass/style.scss */
 .index3_wrapper .index3_header .index3_sns_wrapper .logo_weibo {
-  background-image: url('/images/icons-sa3ca1be2d4.png');
-  background-position: 0 -653px;
+  background-image: url('/images/icons-sb15b506933.png');
+  background-position: 0 -695px;
   width: 34px;
   height: 26px;
 }
@@ -950,8 +950,8 @@ body {
 .index3_wrapper .index3_header .icon_w {
   display: inline-block;
   margin-top: 15px;
-  background-image: url('/images/icons-sa3ca1be2d4.png');
-  background-position: 0 -462px;
+  background-image: url('/images/icons-sb15b506933.png');
+  background-position: 0 -484px;
   width: 36px;
   height: 20px;
   /*@include spriteImg($icons,"nav_zx");
@@ -963,31 +963,31 @@ body {
 }
 /* line 636, ../sass/style.scss */
 .index3_wrapper .index3_header .icon_w.nav_zx {
-  background-position: 0 -462px;
+  background-position: 0 -484px;
 }
 /* line 639, ../sass/style.scss */
 .index3_wrapper .index3_header .icon_w.nav_zixun {
-  background-position: 0 -414px;
+  background-position: 0 -436px;
 }
 /* line 642, ../sass/style.scss */
 .index3_wrapper .index3_header .icon_w.nav_zj {
-  background-position: 0 -438px;
+  background-position: 0 -460px;
 }
 /* line 645, ../sass/style.scss */
 .index3_wrapper .index3_header .icon_w.nav_dy {
-  background-position: 0 -318px;
+  background-position: 0 -340px;
 }
 /* line 648, ../sass/style.scss */
 .index3_wrapper .index3_header .icon_w.nav_ftp {
-  background-position: 0 -342px;
+  background-position: 0 -364px;
 }
 /* line 651, ../sass/style.scss */
 .index3_wrapper .index3_header .icon_w.nav_jj {
-  background-position: 0 -366px;
+  background-position: 0 -388px;
 }
 /* line 654, ../sass/style.scss */
 .index3_wrapper .index3_header .icon_w.nav_qp {
-  background-position: 0 -390px;
+  background-position: 0 -412px;
 }
 /* line 662, ../sass/style.scss */
 .index3_wrapper .index3_main {
@@ -1043,57 +1043,63 @@ body {
 .index3_wrapper .index3_main .index3_main_inner .content .left {
   position: relative;
   width: 230px;
+  float: left;
   margin-right: 30px;
+  clear: both;
 }
-/* line 701, ../sass/style.scss */
+/* line 703, ../sass/style.scss */
 .index3_wrapper .index3_main .index3_main_inner .content .left .cover_editor {
   width: 230px;
 }
-/* line 703, ../sass/style.scss */
+/* line 705, ../sass/style.scss */
 .index3_wrapper .index3_main .index3_main_inner .content .left .cover_editor .cover {
   height: 338px;
   width: 230px;
   background: url(../images/dds.jpg);
 }
-/* line 708, ../sass/style.scss */
+/* line 710, ../sass/style.scss */
 .index3_wrapper .index3_main .index3_main_inner .content .left .cover_editor .editor {
   font-family: "Microsoft YaHei";
   font-size: 16px;
   color: #676767;
 }
-/* line 712, ../sass/style.scss */
+/* line 714, ../sass/style.scss */
 .index3_wrapper .index3_main .index3_main_inner .content .left .messageboard {
   width: 230px;
 }
-/* line 714, ../sass/style.scss */
+/* line 716, ../sass/style.scss */
 .index3_wrapper .index3_main .index3_main_inner .content .left .messageboard .dajiashuo {
   margin-top: 20px;
-  background-image: url('/images/icons-sa3ca1be2d4.png');
+  background-image: url('/images/icons-sb15b506933.png');
   background-position: 0 -100px;
   width: 68px;
   height: 19px;
   background-position: 0 -100px;
 }
-/* line 719, ../sass/style.scss */
+/* line 721, ../sass/style.scss */
 .index3_wrapper .index3_main .index3_main_inner .content .left .messageboard .board {
   margin-top: 16px;
   width: 230px;
+  height: 440px;
   background-color: #fff;
 }
-/* line 723, ../sass/style.scss */
-.index3_wrapper .index3_main .index3_main_inner .content .left .messageboard .board div {
+/* line 726, ../sass/style.scss */
+.index3_wrapper .index3_main .index3_main_inner .content .left .messageboard .board .comment {
   position: relative;
-  height: 94px;
   margin: 0 auto;
+  height: 96px;
   padding-top: 5px;
   width: 200px;
 }
-/* line 729, ../sass/style.scss */
-.index3_wrapper .index3_main .index3_main_inner .content .left .messageboard .board div p {
+/* line 732, ../sass/style.scss */
+.index3_wrapper .index3_main .index3_main_inner .content .left .messageboard .board .comment p {
+  font-family: "SimSun";
+  font-size: 12px;
+  color: #585757;
   word-break: break-word;
 }
-/* line 733, ../sass/style.scss */
-.index3_wrapper .index3_main .index3_main_inner .content .left .messageboard .board div:after {
+/* line 736, ../sass/style.scss */
+.index3_wrapper .index3_main .index3_main_inner .content .left .messageboard .board .comment:after {
   content: "";
   position: absolute;
   top: 94px;
@@ -1103,11 +1109,68 @@ body {
   height: 1px;
   background-color: #585757;
 }
-/* line 748, ../sass/style.scss */
-.index3_wrapper .index3_main .index3_main_inner .content .right {
-  width: 900px;
+/* line 747, ../sass/style.scss */
+.index3_wrapper .index3_main .index3_main_inner .content .left .messageboard .board .next_page {
+  float: right;
+  margin-right: 10px;
+  margin-top: 10px;
+  background-image: url('/images/icons-sb15b506933.png');
+  background-position: 0 -748px;
+  width: 57px;
+  height: 16px;
+  background-position: 0 -748px;
 }
-/* line 764, ../sass/style.scss */
+/* line 754, ../sass/style.scss */
+.index3_wrapper .index3_main .index3_main_inner .content .left .messageboard .board .previous_page {
+  float: right;
+  margin-right: 10px;
+  margin-top: 10px;
+  background-image: url('/images/icons-sb15b506933.png');
+  background-position: 0 -527px;
+  width: 57px;
+  height: 16px;
+  background-position: 0 -527px;
+}
+/* line 762, ../sass/style.scss */
+.index3_wrapper .index3_main .index3_main_inner .content .left .messageboard .woshuo {
+  margin-top: 20px;
+  background-image: url('/images/icons-sb15b506933.png');
+  background-position: 0 -725px;
+  width: 47px;
+  height: 19px;
+  background-position: 0 -725px;
+}
+/* line 767, ../sass/style.scss */
+.index3_wrapper .index3_main .index3_main_inner .content .left .messageboard .mycomment {
+  border: 0;
+  overflow: hidden;
+  height: 114px;
+  width: 230px;
+  margin-top: 16px;
+}
+/* line 774, ../sass/style.scss */
+.index3_wrapper .index3_main .index3_main_inner .content .left .messageboard .index3_submit {
+  float: right;
+  margin-right: 10px;
+  margin-top: 10px;
+  background-image: url('/images/icons-sb15b506933.png');
+  background-position: 0 -170px;
+  width: 38px;
+  height: 18px;
+  background-position: 0 -170px;
+}
+/* line 783, ../sass/style.scss */
+.index3_wrapper .index3_main .index3_main_inner .content .right {
+  width: 700px;
+  float: right;
+}
+/* line 786, ../sass/style.scss */
+.index3_wrapper .index3_main .index3_main_inner .content .right p {
+  font-family: "SimSun";
+  font-size: 12px;
+  color: #000000;
+}
+/* line 803, ../sass/style.scss */
 .index3_wrapper .index3_footer {
   position: absolute;
   bottom: 0;
@@ -1118,14 +1181,14 @@ body {
   text-align: center;
   color: #fff;
 }
-/* line 772, ../sass/style.scss */
+/* line 811, ../sass/style.scss */
 .index3_wrapper .index3_footer .index3_inner {
   position: relative;
   width: 1240px;
   margin: 0 auto;
   height: 38px;
 }
-/* line 778, ../sass/style.scss */
+/* line 817, ../sass/style.scss */
 .index3_wrapper .index3_footer .index3_inner .copyright {
   height: 38px;
   margin-left: 70px;
