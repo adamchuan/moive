@@ -8,10 +8,10 @@
 
 
 
-@mixin font-main-title{
+@mixin font-main-title($color:#00a0e9){
 	font-family:"Microsoft YaHei";
 	font-size:32px;
-	color:#00a0e9;
+	color:$color;
 }
 
 @mixin font-sub($font-size:18px,$color:#676767){

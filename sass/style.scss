@@ -1056,6 +1056,147 @@ $icons : sprite-map("icons/*.png",$spacing: 4px);
 			}
 		}
 	}
+	.index3_online_main{
+		width: 100%;
+		position: relative;
+		margin-top: 50px;
+		.blackboard{
+			width: 100%;
+			background-color:#585858;
+			.index3_main_inner{
+				width: 960px;
+				margin:0 auto;
+				.title{
+					position:relative;
+					width: 960px;
+					height: 74px;
+					margin: 0 auto;
+					div{
+						width: 600px;
+						.main_title{
+							@include font-main-title(#7ecef4);
+						}
+						.sub_title{
+							@include font-sub(18px,#f1f1f1);
+						}
+					}
+					.icon_attention{
+						height: 31px;
+						width: 180px;
+						position: absolute;
+						bottom: 0px;
+						right: 0px;
+						div{
+							float: left;
+							margin-right: 10px;
+							cursor:pointer;
+						}
+						.weibo{
+							@include spriteImg($icons,"online_share_weibo");
+									background-position : sprite-position($icons,"online_share_weibo");
+						}
+						.weixin{
+							@include spriteImg($icons,"online_share_wechat");
+									background-position : sprite-position($icons,"online_share_wechat");
+						}
+						.qzone{
+							@include spriteImg($icons,"online_share_qzone");
+									background-position : sprite-position($icons,"online_share_qzone");
+						}
+						.renren{
+							@include spriteImg($icons,"online_share_renren");
+									background-position : sprite-position($icons,"online_share_renren");
+						}
+
+					}
+				}
+				.video{
+					height: 560px;
+					width: 960px;
+					background-color:black;
+					margin: 0 auto;
+				}
+			}
+		}
+		.messageboard{
+			width:960px;
+			margin: 0 auto;
+			
+			.dajiashuo{
+					margin-top: 20px;
+					@include spriteImg($icons,"dajiashuo");
+					background-position : sprite-position($icons,"dajiashuo");
+			}
+			.board{
+					width: 100%;
+					margin-top: 12px;				
+					.comments{
+						position: relative;
+						width: 100%;
+						padding-bottom:10px;
+						background-color: #fff;	
+						.comment{
+							margin-top: 5px;
+							width: 100%;
+							.time{
+								@include font-content(#585757);
+							}
+							.comment_content{
+								@include font-content(#585757);
+								margin-top: 5px;								
+							}
+							&:after{
+								content: "";
+								position: absolute;
+								z-index:1;
+								left: 3px;							
+								width:954px;
+								height: 1px;
+								background-color:#585757;
+							}							
+						}
+						.next_page{
+									float: right;
+									clear:both;
+									margin-right: 10px;
+									margin-top: 10px;	
+									cursor:pointer;
+									@include spriteImg($icons,"xiayiye");
+									background-position : sprite-position($icons,"xiayiye");
+							}
+						.previous_page{		
+							float: right;
+							/*clear:both;*/
+							margin-right: 10px;
+							margin-top: 10px;	
+							cursor:pointer;			
+							@include spriteImg($icons,"shangyiye");
+							background-position : sprite-position($icons,"shangyiye");
+						}
+						@include clearfix;
+					}
+					.woshuo{
+						margin-top: 20px;
+						@include spriteImg($icons,"woshuo");
+						background-position : sprite-position($icons,"woshuo");
+					}
+					.mycomment{
+						margin-top: 15px;
+						height: 100px;
+						width: 100%;
+					}
+					.index3_submit{
+						float: right;
+						clear:both;
+						margin-right: 10px;
+						margin-top: 10px;	
+						cursor:pointer;
+						@include spriteImg($icons,"index3_submit");
+						background-position : sprite-position($icons,"index3_submit");
+					}
+			}
+		}
+	}
 
 	.index3_footer{
 			position:absolute;
