@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>求片</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="">
+	<div class="wrapper pb_50 nav_6" id="wrapper">
+		
+		<!--#include file="/head.htm" -->
+
+		<div class="indexbanner">
+			<img class="bannerimg" src="./images/liangxiaowucai.jpg" alt="">
+		</div>
+		<div class="clearfix">表格</div>
+
+		<!--#include file="/foot.htm" -->
+	</div>
+	
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

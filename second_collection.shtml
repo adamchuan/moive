@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>专辑</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="">
+	<div class="wrapper pb_50 nav_1" id="wrapper">
+		
+		<!--#include file="/head.htm" -->
+
+
+		<div class="indexbanner">
+			<img class="bannerimg" src="./images/liangxiaowucai.jpg" alt="">
+		</div>
+		<main class="clearfix">
+			<div class="left_list">
+				<div class="l_list">
+					<p class="title_quarter10"></p>
+					<ul>
+						<li><a href="">黑帮家族</a></li>
+						<li><a href="">玩具总动员</a></li>
+						<li><a href="">断背山</a></li>
+						<li><a href="">日韩</a></li>
+						<li><a href="">赤焰战场</a></li>
+						<li><a href="">黑帮家族</a></li>
+						<li><a href="">玩具总动员</a></li>
+						<li><a href="">断背山</a></li>
+						<li><a href="">日韩</a></li>
+						<li><a href="">赤焰战场</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="right_list">
+				<h2 class="area_title">
+					<span class="word zj">专辑 collection</span>
+				</h2>
+				<div class="list_wrapper_collection">
+					<a href="" class="item">
+						<img src="./images/list_pic.jpg" class="clc_img">
+						<div class="msg_wrapper">
+							<p>
+								<em>有关霍比特人的电影</em>
+							</p>
+							<p>
+								又是一年颁奖季，花落谁家你猜呀方法法司法发送沙发沙发。
+								纵观2013年，电影界风起云涌精彩纷呈，
+								奥斯卡这个贱贱的小金人不知道又瞄准谁了。
+								管他呢，提了名的好片还怕没观众？
+							</p>
+						</div>
+					</a>
+					<a href="" class="item">
+						<img src="./images/list_pic.jpg" class="clc_img">
+						<div class="msg_wrapper">
+							<p>
+								<em>有关霍比特人的电影</em>
+							</p>
+							<p>
+								又是一年颁奖季，花落谁家你猜呀方法法司法发送沙发沙发。
+								纵观2013年，电影界风起云涌精彩纷呈，
+								奥斯卡这个贱贱的小金人不知道又瞄准谁了。
+								管他呢，提了名的好片还怕没观众？
+							</p>
+						</div>
+					</a>
+					<a href="" class="item">
+						<img src="./images/list_pic.jpg" class="clc_img">
+						<div class="msg_wrapper">
+							<p>
+								<em>有关霍比特人的电影</em>
+							</p>
+							<p>
+								又是一年颁奖季，花落谁家你猜呀方法法司法发送沙发沙发。
+								纵观2013年，电影界风起云涌精彩纷呈，
+								奥斯卡这个贱贱的小金人不知道又瞄准谁了。
+								管他呢，提了名的好片还怕没观众？
+							</p>
+						</div>
+					</a>
+					<a href="" class="item">
+						<img src="./images/list_pic.jpg" class="clc_img">
+						<div class="msg_wrapper">
+							<p>
+								<em>有关霍比特人的电影</em>
+							</p>
+							<p>
+								又是一年颁奖季，花落谁家你猜呀方法法司法发送沙发沙发。
+								纵观2013年，电影界风起云涌精彩纷呈，
+								奥斯卡这个贱贱的小金人不知道又瞄准谁了。
+								管他呢，提了名的好片还怕没观众？
+							</p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</main>
+
+		<!--#include file="/foot.htm" -->
+	</div>
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
