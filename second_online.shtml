@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>在线播放</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="">
+	<div class="wrapper pb_50 nav_4" id="wrapper">
+		
+		<!--#include file="/head.htm" -->
+
+		<main class="clearfix">
+			<div class="left_list">
+				<div class="l_list">
+					<p class="title_type"></p>
+					<ul>
+						<li><a href="">剧情</a></li>
+						<li><a href="">动作</a></li>
+						<li><a href="">科幻</a></li>
+						<li><a href="">恐怖</a></li>
+						<li><a href="">喜剧</a></li>
+						<li><a href="">动画</a></li>
+						<li><a href="">战争</a></li>
+						<li><a href="">其他</a></li>
+						<li><a href="">公开课</a></li>
+					</ul>
+				</div>
+				<div class="l_list">
+					<p class="title_area"></p>
+					<ul>
+						<li><a href="">欧美</a></li>
+						<li><a href="">大陆</a></li>
+						<li><a href="">港台</a></li>
+						<li><a href="">日韩</a></li>
+						<li><a href="">其他</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="right_list">
+				<h2 class="area_title">
+					<span class="word zx">电视剧 tv</span>
+				</h2>
+				<div class="list_wrapper_online">
+					<div class="item">
+						<a href="" class="list_pic"><img src="./images/huobite.jpg"></a>
+						<div class="item_message">
+							<a href="" class="name">电影名</a>
+							<p class="type">类型/地区</p>
+							<p class="time">2013-12-7</p>
+							<a href="" class="likes">
+								<p class="num">20</p>
+							</a> 
+						</div>
+					</div>
+					<div class="item">
+						<a href="" class="list_pic"><img src="./images/huobite.jpg"></a>
+						<div class="item_message">
+							<a href="" class="name">电影名</a>
+							<p class="type">类型/地区</p>
+							<p class="time">2013-12-7</p>
+							<a href="" class="likes">
+								<p class="num">20</p>
+							</a> 
+						</div>
+					</div>
+					<div class="item">
+						<a href="" class="list_pic"><img src="./images/huobite.jpg"></a>
+						<div class="item_message">
+							<a href="" class="name">电影名</a>
+							<p class="type">类型/地区</p>
+							<p class="time">2013-12-7</p>
+							<a href="" class="likes">
+								<p class="num">20</p>
+							</a> 
+						</div>
+					</div>
+					<div class="item">
+						<a href="" class="list_pic"><img src="./images/huobite.jpg"></a>
+						<div class="item_message">
+							<a href="" class="name">电影名</a>
+							<p class="type">类型/地区</p>
+							<p class="time">2013-12-7</p>
+							<a href="" class="likes">
+								<p class="num">20</p>
+							</a> 
+						</div>
+					</div>
+					<div class="item">
+						<a href="" class="list_pic"><img src="./images/huobite.jpg"></a>
+						<div class="item_message">
+							<a href="" class="name">电影名</a>
+							<p class="type">类型/地区</p>
+							<p class="time">2013-12-7</p>
+							<a href="" class="likes">
+								<p class="num">20</p>
+							</a> 
+						</div>
+					</div>
+					<div class="item">
+						<a href="" class="list_pic"><img src="./images/huobite.jpg"></a>
+						<div class="item_message">
+							<a href="" class="name">电影名</a>
+							<p class="type">类型/地区</p>
+							<p class="time">2013-12-7</p>
+							<a href="" class="likes">
+								<p class="num">20</p>
+							</a> 
+						</div>
+					</div>
+					<div class="item">
+						<a href="" class="list_pic"><img src="./images/huobite.jpg"></a>
+						<div class="item_message">
+							<a href="" class="name">电影名</a>
+							<p class="type">类型/地区</p>
+							<p class="time">2013-12-7</p>
+							<a href="" class="likes">
+								<p class="num">20</p>
+							</a> 
+						</div>
+					</div>
+					<div class="item">
+						<a href="" class="list_pic"><img src="./images/huobite.jpg"></a>
+						<div class="item_message">
+							<a href="" class="name">电影名</a>
+							<p class="type">类型/地区</p>
+							<p class="time">2013-12-7</p>
+							<a href="" class="likes">
+								<p class="num">20</p>
+							</a> 
+						</div>
+					</div>
+				</div>
+
+				<div class="list_foot">
+					<ul class="clearfix">
+						<li><a href="">首页</a></li>
+						<li><a href="">上一页</a></li>
+						<li><a href="">下一页</a></li>
+						<li><a href="">尾页</a></li>
+						<li><p>现在是第<span>1/xxx</span>页</p></li>
+						<li class="page_input">
+							<span>跳转至&nbsp;&nbsp;第</span>
+							<input id="page" type="text" class="number" value="1">
+							<span>页</span>&nbsp;&nbsp;
+							<input class="button" id="click_get_page" value="确定" type="button" name="bottom-page-turn">
+						</li>
+					</ul>
+				</div>
+			</div>
+		</main>
+
+		<!--#include file="/foot.htm" -->
+	</div>
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
