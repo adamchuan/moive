@@ -1,10 +1,9 @@
 /*$(document).ready(
 	function nav_status () {
-	var as=$(".icon_w").get();
-	var $as=$(as);
+	var $as=$(".icon_w");
 	for(i=0;i<$as.length;i++){
-		if (window.location.href.indexOf($as[i].attr("title"))>=0) {
-			$as[i].parent().addClass("index3_nav_xiahuaxian");
+		if (window.location.href.indexOf($as.attr("title"))>=0) {
+			$as.parent().addClass("index3_nav_xiahuaxian");
 		};
 	}
 }
