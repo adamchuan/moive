@@ -540,16 +540,7 @@ $icons : sprite-map("icons/*.png",$spacing: 4px);
 				position:relative;
 				width:42px;
 				height:50px;
-				text-align: center;	
-				/*:after{
-					position:absolute;
-					display: none;
-					top:38px;left:0;z-index:1;
-					width:100%;
-					height: 5px;
-					background-color:#fff;
-					content:"";
-				}		*/		
+				text-align: center;						
 				&:hover{
 					@include rgba-background(rgba(255,255,255,0.1));
 					&:after{
@@ -584,6 +575,20 @@ $icons : sprite-map("icons/*.png",$spacing: 4px);
 						}
 					}
 				}	
+			}
+			/*这是一个很奇怪的类，为什么要这么写呢?是这样的.
+			由于我导航栏下边的那条杠杠是使用：after做出来的。而
+			在JS不能直接通过选择器选择伪元素，即其不能算作DOM节点
+			所以我创建下边这个新类，把样式加到里边*/
+			.index3_nav_xiahuaxian{
+				&:after{
+					position:absolute;
+					top:38px;left:0;z-index:1;
+					width:100%;
+					height: 5px;
+					background-color:#fff;
+					content:"";
+				}
 			}
 			.index3_search_wrapper{
 				position:relative;
